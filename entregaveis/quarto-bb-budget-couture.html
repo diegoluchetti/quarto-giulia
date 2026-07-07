@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Quarto BB — Budget Couture Shopping Dossier</title>
+<style>
+@page { size: A4; margin: 14mm; }
+* { box-sizing: border-box; }
+body { margin:0; color:#2d2622; background:#fbfaf7; font-family: Arial, Helvetica, sans-serif; line-height:1.42; }
+a { color:#7d5044; text-decoration:none; border-bottom:1px solid #d8b9ae; }
+h1,h2,h3 { font-family: Georgia, 'Times New Roman', serif; font-weight:400; margin:0 0 12px; }
+h1 { font-size:52px; line-height:.95; letter-spacing:-.04em; }
+h2 { font-size:34px; letter-spacing:-.03em; }
+h3 { font-size:20px; }
+p { margin:0 0 12px; }
+.page { page-break-after: always; padding: 6mm 0; }
+.cover { min-height: 265mm; display:grid; grid-template-rows: 1fr auto; gap:18px; }
+.hero { height:150mm; border-radius: 26px; overflow:hidden; border:1px solid #e1d7cf; }
+.hero img, .image img { width:100%; height:100%; object-fit:cover; display:block; }
+.titlebar { display:grid; grid-template-columns: 1.3fr .7fr; gap:20px; align-items:end; }
+.kicker { text-transform:uppercase; letter-spacing:.18em; color:#9a7569; font-size:10px; font-weight:700; margin-bottom:8px; }
+.subtitle { font-size:16px; color:#725e56; max-width:620px; }
+.meta { border:1px solid #d9ccc2; padding:16px; border-radius:18px; background:#fffdf9; font-size:12px; }
+.quote { font-family:Georgia,serif; font-size:25px; color:#5f4a42; padding:22px; border-left:2px solid #b99081; background:#fff; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:start; }
+.grid3 { display:grid; grid-template-columns: repeat(3,1fr); gap:12px; }
+.image { height:135mm; border-radius:22px; overflow:hidden; border:1px solid #e4d9d0; background:white; }
+.swatches { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; margin:18px 0; }
+.swatch { min-height:70px; border-radius:14px; padding:9px; border:1px solid rgba(45,38,34,.08); display:flex; align-items:end; font-size:10px; color:#3b312c; }
+.s1 { background:#f4f1eb; } .s2 { background:#e8d8ce; } .s3 { background:#c99f91; } .s4 { background:#d9c0a6; } .s5 { background:#f2ede4; } .s6 { background:#c3ad93; }
+.plan { width:100%; background:#fff; border-radius:20px; border:1px solid #dfd2c8; padding:12px; }
+svg text { font-family: Arial, sans-serif; font-size:15px; fill:#4b3c35; } svg .small { font-size:12px; fill:#7b6a60; }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.card { background:white; border:1px solid #e3d8d0; border-radius:18px; padding:16px; min-height:118px; }
+.big { font-family:Georgia,serif; font-size:30px; color:#6e5147; }
+table { width:100%; border-collapse:collapse; font-size:10px; background:#fff; border:1px solid #e2d8d0; }
+th { text-align:left; text-transform:uppercase; letter-spacing:.1em; font-size:8px; color:#8a6e64; background:#f3ede6; }
+th, td { padding:8px; vertical-align:top; border-bottom:1px solid #eee6df; }
+td.num { text-align:right; white-space:nowrap; }
+.muted { color:#88746b; font-size:9px; }
+.styling { margin-top:5px; font-style:italic; color:#7f6258; font-size:9px; }
+.tier { display:inline-block; padding:3px 7px; border-radius:999px; font-size:8px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:4px; background:#eee; }
+.essencial { background:#efe5dc; } .upgrade { background:#ead2cd; } .desejo { background:#d5b69f; color:#fff; }
+.subtotal { text-align:right; margin-top:10px; color:#5e4a42; }
+.budget { font-size:22px; font-family:Georgia,serif; }
+.checklist li { margin:7px 0; }
+.footer-note { font-size:10px; color:#806d64; }
+pre { white-space:pre-wrap; font-size:8px; background:#fff; border:1px solid #eee; padding:10px; max-height:120mm; overflow:hidden; }
+</style>
+</head>
+<body>
+<section class="page cover">
+  <div class="hero"><img src="file:///C:/Users/Administrator/Documents/quarto_bb/assets/editorial/budget-couture-cover-cloud-dancer.png" alt="Mood editorial Cloud Dancer"></div>
+  <div class="titlebar">
+    <div>
+      <div class="kicker">Quarto BB · Shopping dossier</div>
+      <h1>Budget<br>Couture</h1>
+      <p class="subtitle">Curadoria completa para um quarto de bebê fashionista, inspirado em PANTONE 11-4201 Cloud Dancer, com compras reais no Brasil e inteligência de orçamento.</p>
+    </div>
+    <div class="meta">
+      <strong>Cliente:</strong> Mãe do bebê<br>
+      <strong>Área:</strong> 2,54 m × 2,54 m<br>
+      <strong>Direção:</strong> Low budget, high taste<br>
+      <strong>Data:</strong> Maio/2026<br>
+      <strong>Entrega:</strong> PDF clicável + lista canônica
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="kicker">Manifesto</div>
+  <h2>Moda italiana/francesa, orçamento brasileiro</h2>
+  <div class="grid2">
+    <div>
+      <p class="quote">A proposta não é comprar luxo. É editar como quem entende luxo: pouca coisa, boa proporção, textura certa e paleta impecável.</p>
+      <p>O quarto parte do <strong>Cloud Dancer</strong>, branco etéreo da Pantone 2026, e substitui o excesso infantil por uma atmosfera de boutique: madeira savana, bouclé, algodão, voil, blush em pequenas doses e metal champagne.</p>
+      <p>Para uma mãe que ama Vogue, Itália e França, a régua é: <strong>silhueta limpa, materiais táteis, nada óbvio, nada temático demais</strong>. O bebê ganha conforto; a mãe ganha um quarto com identidade.</p>
+    </div>
+    <div class="image"><img src="file:///C:/Users/Administrator/Documents/quarto_bb/assets/editorial/budget-couture-moodboard-cloud-dancer.png" alt="Moodboard Cloud Dancer"></div>
+  </div>
+  <div class="swatches">
+    <div class="swatch s1">Cloud Dancer</div><div class="swatch s2">Powder blush</div><div class="swatch s3">Tea rose</div><div class="swatch s4">Savana wood</div><div class="swatch s5">Bouclé cream</div><div class="swatch s6">Champagne</div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="kicker">Layout fiel</div>
+  <h2>Planta de implantação</h2>
+  <div class="grid2">
+    <div>
+<svg viewBox="0 0 620 620" role="img" aria-label="Planta baixa do quarto" class="plan">
+  <rect x="60" y="60" width="500" height="500" fill="#fbfaf7" stroke="#2d2622" stroke-width="2"/>
+  <text x="310" y="42" text-anchor="middle">PN • janela</text>
+  <text x="310" y="590" text-anchor="middle">PS • prateleiras</text>
+  <text x="24" y="315" transform="rotate(-90 24 315)" text-anchor="middle">PO • armário + porta</text>
+  <text x="598" y="315" transform="rotate(90 598 315)" text-anchor="middle">PL • Luna</text>
+  <rect x="60" y="60" width="110" height="305" fill="#d7bea5" stroke="#8a6d58"/>
+  <text x="115" y="215" text-anchor="middle" transform="rotate(-90 115 215)">ARM-01</text>
+  <path d="M60 395 L60 560 L205 560" fill="none" stroke="#9e9e9e" stroke-width="9"/>
+  <path d="M60 500 Q150 500 150 410" fill="none" stroke="#b89a8d" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="110" y="522" text-anchor="middle">POR-01</text>
+  <rect x="398" y="178" width="162" height="382" rx="8" fill="#eee1d4" stroke="#8a6d58"/>
+  <rect x="416" y="198" width="108" height="215" rx="6" fill="#f7f0e9" stroke="#c6a98f"/>
+  <rect x="416" y="423" width="108" height="110" rx="6" fill="#ead7c8" stroke="#c6a98f"/>
+  <rect x="524" y="198" width="24" height="335" rx="4" fill="#d8c0a8" opacity=".65"/>
+  <text x="479" y="376" text-anchor="middle">LUNA 194cm</text>
+  <text x="480" y="554" text-anchor="middle" class="small">60cm livres</text>
+  <circle cx="270" cy="326" r="54" fill="#f1ebe4" stroke="#bfaea1"/>
+  <circle cx="345" cy="345" r="28" fill="#f9f7f2" stroke="#c9bbb1"/>
+  <text x="270" y="326" text-anchor="middle">Clarice</text>
+  <rect x="225" y="536" width="170" height="14" fill="#d8c0a8"/>
+  <rect x="245" y="510" width="130" height="14" fill="#d8c0a8"/>
+  <text x="310" y="500" text-anchor="middle">Prateleiras PS</text>
+  <rect x="195" y="60" width="255" height="14" fill="#d9e2e4" stroke="#9caeb2"/>
+  <text x="323" y="94" text-anchor="middle">JAN-01</text>
+</svg></div>
+    <div>
+      <h3>Regras executivas</h3>
+      <ul>
+        <li><strong>PO:</strong> armário existente no trecho norte e porta no sudoeste. Sem prateleiras.</li>
+        <li><strong>PL:</strong> Luna encostado na parede leste, ocupando 194 cm de uma parede de 254 cm.</li>
+        <li><strong>PS:</strong> parede vazia para duas prateleiras, fora da zona de abertura da porta.</li>
+        <li><strong>PN:</strong> janela com voil + blackout; manter berço fora do eixo direto da janela.</li>
+      </ul>
+      <div class="card">
+        <div class="kicker">Proporção</div>
+        <div class="big">194 / 254 = 76%</div>
+        <p class="footer-note">O berço multifuncional é grande, mas não ocupa a parede inteira: restam cerca de 60 cm no canto PS-PL.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="kicker">Resumo financeiro</div>
+  <h2>Quanto comprar agora</h2>
+  <div class="cards">
+    <div class="card"><div class="kicker">Essencial executável</div><div class="budget">R$ 16.112,01</div><p>Itens para o quarto funcionar com segurança, sono, troca, amamentação e clima.</p></div>
+    <div class="card"><div class="kicker">Upgrades + desejos</div><div class="budget">R$ 5.190,07</div><p>Camadas editoriais: textura, tapete premium, luz indireta, peças com acabamento mais fashion.</p></div>
+    <div class="card"><div class="kicker">Lista completa</div><div class="budget">R$ 16.112,01</div><p>Inclui todos os itens e alternativas, sem descontar escolhas mutuamente excludentes.</p></div>
+  </div>
+  <p class="footer-note">Observação: a lista completa soma opções alternativas. Para compra real, escolher uma opção por categoria quando houver Essencial/Upgrade/Desejo.</p>
+</section>
+
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Móveis âncora</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Berço Multifuncional Luna c/ Auxiliar Reller</strong><br><span class="muted">Angelina Baby</span></td>
+  <td>Berço 3 em 1 com cômoda/trocador e cama auxiliar baixa. Medida 194 x 83 x 102 cm, colchão 130 x 70.<p class="styling">Escolher Branco Fosco/Savana: conversa com o armário existente e entrega a leitura quiet luxury.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 2.298,60</td>
+  <td class="num">R$ 2.298,60</td>
+  <td><a href="https://www.angelinababy.com.br/bercos/berco-multifuncional-luna-moveis-reller?variant_id=3883">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Colchão Baby Light Ortobom 130 x 70 x 12</strong><br><span class="muted">Angelina Baby</span></td>
+  <td>Colchão compatível com berço americano 130 x 70 cm.<p class="styling">Base branca, sem estampas fortes. O luxo aqui é proporção e limpeza visual.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 456,00</td>
+  <td class="num">R$ 456,00</td>
+  <td><a href="https://www.angelinababy.com.br/colchoes/colchao-baby-ligth-ortobom-130x70x12">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Poltrona Clarice Giro + Balanço + Puff</strong><br><span class="muted">Mercado Livre</span></td>
+  <td>Poltrona com mecanismo de giro e balanço, puff incluso; referência 72 x 88 x 106 cm.<p class="styling">Tecido bouclé pérola/creme: referência Chanel sem parecer fantasia.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 1.999,00</td>
+  <td class="num">R$ 1.999,00</td>
+  <td><a href="https://produto.mercadolivre.com.br/MLB-4102544042-poltrona-de-amamentacao-clarice-giro-balanco-beb-completo-_JM">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Móveis âncora: <strong>R$ 4.753,60</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Móveis complementares</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Kit 2 Prateleiras Luna 89,6 cm Savana</strong><br><span class="muted">PR Móveis</span></td>
+  <td>Duas prateleiras em MDF com alças em couro sintético. Instalar na PS, nunca na PO.<p class="styling">Prateleiras como vitrine: poucos livros, 1 escultura, 1 cesto. Nada abarrotado.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 185,00</td>
+  <td class="num">R$ 185,00</td>
+  <td><a href="https://www.prmoveis.com.br/produto/kit-2-prateleiras-luna-89-6cm-savana-fosco-com-alcas-de-couro-reller-moveis-115553">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Mesa lateral redonda branca Gueridon 45 cm</strong><br><span class="muted">Tok&amp;Stok</span></td>
+  <td>Mesa de apoio de 45 cm para água, mamadeira, livro e luminária pequena.<p class="styling">Uma peça redonda quebra as linhas retas do berço e deixa o canto mais francês.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 349,90</td>
+  <td class="num">R$ 349,90</td>
+  <td><a href="https://www.tokstok.com.br/mesa-lateral-redonda-45-cm-branco-gueridon/p">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Kit higiene porcelana branco + dourado</strong><br><span class="muted">Ciranda Arte Criativa</span></td>
+  <td>Potes e bandeja para algodão, cotonete e higiene no trocador.<p class="styling">Dourado pequeno e controlado: toque joalheria, não ostentação.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 139,80</td>
+  <td class="num">R$ 139,80</td>
+  <td><a href="https://www.cirandaartecriativa.com.br/kit-higiene-porcelana-bebe-neutro-pote-algodao-cotonete">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Lixeira inox pedal Tramontina 12 L</strong><br><span class="muted">Tramontina</span></td>
+  <td>Lixeira com pedal e balde interno para fraldas e rotina de troca.<p class="styling">Inox é prático; se quiser suavizar, posicionar ao lado do Luna, fora do foco visual.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 146,30</td>
+  <td class="num">R$ 146,30</td>
+  <td><a href="https://www.tramontina.com.br/lixeira-com-pedal-tramontina-brasil-em-aco-inox-com-acabamento-polido-e-balde-interno-12-l/94538112.html">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Móveis complementares: <strong>R$ 821,00</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Cortina e janela</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Cortina Basic Blackout 3,00 x 2,50 m trilho suíço</strong><br><span class="muted">Lar Aconchegante</span></td>
+  <td>Blackout para sono e sonecas. Confirmar estoque e altura final antes da compra.<p class="styling">Preferir off-white/cinza quente; sem personagem.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 165,99</td>
+  <td class="num">R$ 165,99</td>
+  <td><a href="https://www.laraconchegante.com.br/cortina-trilho-suico-300x250">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Cortina blackout com linho 3,00 x 2,50 m</strong><br><span class="muted">Ludatex</span></td>
+  <td>Blackout com textura de linho, mais editorial que blackout liso.<p class="styling">A textura tipo linho é o truque para parecer sob medida.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 299,90</td>
+  <td class="num">R$ 299,90</td>
+  <td><a href="https://www.ludatex.com.br/produtos/cortina-blackout-com-linho-300x250-para-trilho-suico/">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Trilho suíço duplo branco 2 m</strong><br><span class="muted">Doce Aconchego</span></td>
+  <td>Trilho duplo para voil + blackout. Conferir se suporta o tecido escolhido.<p class="styling">Instalar o mais alto possível abaixo da sanca para alongar o quarto.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 109,99</td>
+  <td class="num">R$ 109,99</td>
+  <td><a href="https://www.doceaconchego.com.br/trilho-suico-duplo-para-parede-maxi-49mm-2-metros-aluminio-cor-branco/p/MLB26297408">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Voil branco/off-white 3 m</strong><br><span class="muted">Mercado Livre</span></td>
+  <td>Camada leve para luz diurna e privacidade.<p class="styling">Voil é a parte francesa do quarto: movimento, leveza, foto bonita.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 129,90</td>
+  <td class="num">R$ 129,90</td>
+  <td><a href="https://lista.mercadolivre.com.br/cortina-voil-branca-trilho-suico-3m">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Cortina e janela: <strong>R$ 705,78</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Parede e acabamento</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Papel de parede Nuvem com Laço tons neutros</strong><br><span class="muted">Loja da Parede</span></td>
+  <td>Adesivo vinílico autocolante, lavável, atóxico. Preço por faixa/rolo de referência.<p class="styling">Aplicar somente no painel PL ou usar poucos módulos; menos é mais.</p></td>
+  <td class="num">12</td>
+  <td class="num">R$ 10,30</td>
+  <td class="num">R$ 123,60</td>
+  <td><a href="https://lojadaparede.com.br/infantil/359-papel-de-parede-infantil-nuvem-com-laco-tons-neutros-adesivo-autocolante.html">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Papel de parede infantil laços neutros</strong><br><span class="muted">Varoni Decor</span></td>
+  <td>Alternativa mais fashionista, com laços em leitura delicada.<p class="styling">Laços têm perfume Dior/Chloé, mas precisam ficar bem sutis.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 199,90</td>
+  <td class="num">R$ 199,90</td>
+  <td><a href="https://www.varonidecor.com.br/infantil/papel-de-parede-infantil-lacos-vr132">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Tinta equivalente Cloud Dancer 11-4201</strong><br><span class="muted">Suvinil</span></td>
+  <td>Tinta acrílica fosca ou acetinada em branco quente sob medida aproximando Cloud Dancer.<p class="styling">Pedir amostra: branco precisa ser quente, nunca hospitalar.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 260,00</td>
+  <td class="num">R$ 260,00</td>
+  <td><a href="https://www.suvinil.com.br/produtos/tintas-para-paredes">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Parede e acabamento: <strong>R$ 583,50</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Iluminação</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Painel LED inteligente NEO Avant 24 W 2700K-6500K</strong><br><span class="muted">NEO Avant</span></td>
+  <td>Plafon smart dimerizável, bivolt, com luz quente a fria.<p class="styling">Usar cenas: banho/troca mais claro; mamada noturna bem baixo e quente.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 109,90</td>
+  <td class="num">R$ 109,90</td>
+  <td><a href="https://neoavant.com.br/products/avant-neo-painel-led-plafon-smart-sobrepor-24w-2700k-a-6500k-30cm-110v-220v-bivolt-quadrado-cod-291990734-neo-avant">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Plafon Taschibra Liora On TW 30 W</strong><br><span class="muted">Lume Decor</span></td>
+  <td>Plafon dimerizável com controle e multitemperatura.<p class="styling">Upgrade se quiser acabamento mais robusto e controle dedicado.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 390,90</td>
+  <td class="num">R$ 390,90</td>
+  <td><a href="https://www.lumedecoronline.com.br/led/plafon-de-led/plafon-led-taschibra-liora-on-tw-30w-com-controle-remoto-quadrado-dimerizavel-e-multitemperatura">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Luz noturna LED bebê USB dimerizável</strong><br><span class="muted">Kinda Kids</span></td>
+  <td>Luz noturna com controle remoto e três níveis de brilho.<p class="styling">Usar escondida perto da poltrona, não como peça protagonista.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 39,90</td>
+  <td class="num">R$ 39,90</td>
+  <td><a href="https://www.kindakids.com.br/luminaria-led/luz-noturna-led-bebe-usb-controle-remoto-dimerizavel-patinho">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier desejo">Desejo</span><br><strong>Perfil de alumínio + fita LED 2700K 1 m</strong><br><span class="muted">Casa &amp; Detalhe</span></td>
+  <td>Luz indireta quente para painel ou prateleiras.<p class="styling">Se o orçamento apertar, cortar primeiro; é lindo, mas não essencial.</p></td>
+  <td class="num">2</td>
+  <td class="num">R$ 106,90</td>
+  <td class="num">R$ 213,80</td>
+  <td><a href="https://casaedetalhe.com.br/produto/perfil-aluminio-c-fita-led/">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Iluminação: <strong>R$ 754,50</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Climatização</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>LG Dual Inverter Compact + IA 9000 BTU 220 V</strong><br><span class="muted">Dufrio</span></td>
+  <td>Split inverter frio, 9000 BTU, adequado para quarto pequeno.<p class="styling">Instalar na PS, jato paralelo ao teto, nunca direto no berço.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 2.179,00</td>
+  <td class="num">R$ 2.179,00</td>
+  <td><a href="https://www.dufrio.com.br/ar-condicionado-split-dual-inverter-lg-compact-ia-s3nq09aaqak-eb2gam1-220v.html">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Instalação ar-condicionado + dreno + suporte</strong><br><span class="muted">Serviço local</span></td>
+  <td>Valor de referência para instalação profissional.<p class="styling">Não economizar na instalação; é item técnico e afeta segurança.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 900,00</td>
+  <td class="num">R$ 900,00</td>
+  <td><a href="https://www.getninjas.com.br/reformas-e-reparos/ar-condicionado/instalacao">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Termo-higrômetro BBLUV Igrö 2 em 1</strong><br><span class="muted">JH Baby Store</span></td>
+  <td>Mede temperatura e umidade com indicador de conforto.<p class="styling">Objeto bonito e funcional para o trocador.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 249,90</td>
+  <td class="num">R$ 249,90</td>
+  <td><a href="https://www.jhbabystore.com.br/bbluv-igro-termometro-higrometro-digital-2-em-1">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Termo-higrômetro Incoterm TH80</strong><br><span class="muted">Laderquimica</span></td>
+  <td>Alternativa técnica e acessível para temperatura/umidade.<p class="styling">Menos bonito, mais racional. Pode ficar discreto no armário.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 86,00</td>
+  <td class="num">R$ 86,00</td>
+  <td><a href="https://www.laderquimica.com.br/termo-higrometro-digital-incoterm-th80-com-alarme-de-temperatura-e-umidade-medicao-interna-e-externa">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Umidificador Fisher-Price HC115 3,4 L</strong><br><span class="muted">Farmácia Nacional</span></td>
+  <td>Umidificador ultrassônico silencioso, reservatório 3,4 L.<p class="styling">Usar só se a umidade ficar abaixo de 40%; sem óleos essenciais para bebê.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 199,90</td>
+  <td class="num">R$ 199,90</td>
+  <td><a href="https://www.farmacianacional.com.br/umidificador-fisher-price-3-4l-mtl-hc115-p557823-p180285">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Climatização: <strong>R$ 3.614,80</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Tapete e têxteis</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier desejo">Desejo</span><br><strong>Tapete lavável infantil 200 x 140 cm Lorena Canals Bereber Beige</strong><br><span class="muted">Bilila Baby</span></td>
+  <td>Tapete premium lavável, 100% algodão, estética europeia.<p class="styling">Peça desejo: é caro, mas muda o quarto inteiro.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 2.211,79</td>
+  <td class="num">R$ 2.211,79</td>
+  <td><a href="https://www.bililababy.com.br/lorena-canals/tapete-bereber-beige">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Tapete infantil lavável bege 200 x 150</strong><br><span class="muted">Mercado Livre</span></td>
+  <td>Alternativa acessível em bege/creme, lavável ou fácil de higienizar.<p class="styling">Escolher sem desenho grande; textura ganha de estampa.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 299,00</td>
+  <td class="num">R$ 299,00</td>
+  <td><a href="https://lista.mercadolivre.com.br/tapete-lavavel-quarto-infantil-bege-200x150">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Almofada Boppy Chicco amamentação</strong><br><span class="muted">Dafiti</span></td>
+  <td>Suporte ergonômico para amamentação.<p class="styling">Capa em branco/creme e uma manta blush fazem o styling.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 249,00</td>
+  <td class="num">R$ 249,00</td>
+  <td><a href="https://www.dafiti.com.br/Almofada-Chicco-Boppy-Sem-Capa-Branco-2968095.html">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Manta tricot canelado blush 80 x 80</strong><br><span class="muted">Bebê Fácil</span></td>
+  <td>Manta decorativa e de colo, usar fora do berço durante sono.<p class="styling">O blush é o toque moda; guardar dobrada na poltrona.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 159,90</td>
+  <td class="num">R$ 159,90</td>
+  <td><a href="https://www.bebefacil.com.br/manta-para-bebe-em-tricot-canelado-rosa-blush---mini-co/p">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Tapete e têxteis: <strong>R$ 2.919,69</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Enxoval seguro</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Jogo lençol berço americano 3 peças 100% algodão</strong><br><span class="muted">Baobá Baby</span></td>
+  <td>Lençol com elástico para colchão 130 x 70, superior e fronha.<p class="styling">Comprar branco, areia e blush muito claro; evitar estampas fortes.</p></td>
+  <td class="num">3</td>
+  <td class="num">R$ 56,10</td>
+  <td class="num">R$ 168,30</td>
+  <td><a href="https://baobababy.com.br/produto/jogo-de-lencol-3-pecas-berco-americano/">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Protetor colchão impermeável 130 x 70</strong><br><span class="muted">Paraíso de Bebê</span></td>
+  <td>Capa impermeável para proteger o colchão.<p class="styling">Item invisível, mas obrigatório.</p></td>
+  <td class="num">2</td>
+  <td class="num">R$ 44,91</td>
+  <td class="num">R$ 89,82</td>
+  <td><a href="https://www.paraisodobebe.com.br/protetor-de-colch-o-130x70-impermeavel-matelado-premium">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Saco de dormir TOG 1.0 algodão</strong><br><span class="muted">Casulo de Anjo</span></td>
+  <td>Saquinho de dormir para 20-24°C, substitui mantas soltas.<p class="styling">Sono seguro &gt; kit berço volumoso.</p></td>
+  <td class="num">2</td>
+  <td class="num">R$ 177,65</td>
+  <td class="num">R$ 355,30</td>
+  <td><a href="https://www.casulodeanjo.com.br/collections/saco-de-dormir-bebe-0-a-12-meses/saco-de-dormir-em-algodao-natural-cogumelo">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Saco de dormir TOG 2.0</strong><br><span class="muted">Com Carinho Baby</span></td>
+  <td>Versão mais quente para noites frias com AC.<p class="styling">Verde calmaria conversa com paletas Pantone sem infantilizar.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 220,00</td>
+  <td class="num">R$ 220,00</td>
+  <td><a href="https://www.comcarinhobaby.com/produtos/saquinho-de-dormir-tog-2-0-verde-calmaria/">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Enxoval seguro: <strong>R$ 833,42</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Organização</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Cesto organizador nuvem algodão 28 cm</strong><br><span class="muted">Grão de Gente</span></td>
+  <td>Cesto para fraldas, mantas e pequenos brinquedos.<p class="styling">Dois cestos iguais deixam a prateleira com cara de boutique.</p></td>
+  <td class="num">2</td>
+  <td class="num">R$ 92,64</td>
+  <td class="num">R$ 185,28</td>
+  <td><a href="https://www.graodegente.com.br/produto/cesto-organizador-para-brinquedos-nuvem-de-algodao-28cm/">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Cesto tricot onda natural</strong><br><span class="muted">Quintal de Madame</span></td>
+  <td>Cesto em tricô natural, peça textural.<p class="styling">A textura faz o papel de luxo sem precisar de marca.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 265,68</td>
+  <td class="num">R$ 265,68</td>
+  <td><a href="https://www.quintaldemadame.com.br/decoracao/cestos/cesto-tricot-onda-natural">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Organização: <strong>R$ 450,96</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Decoração</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Quadro infantil minimalista leão</strong><br><span class="muted">Mundi Infantil</span></td>
+  <td>Quadro minimalista com moldura opcional.<p class="styling">Usar em par, moldura madeira clara ou branca; instalar alto.</p></td>
+  <td class="num">2</td>
+  <td class="num">R$ 59,90</td>
+  <td class="num">R$ 119,80</td>
+  <td><a href="https://mundiminfantil.com/produtos/quadro-leao-minimalista-divertida/">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier upgrade">Upgrade</span><br><strong>Kit quadros minimalistas infantil</strong><br><span class="muted">Aluria Kids</span></td>
+  <td>Kit de quadros infantis em estética minimalista.<p class="styling">Escolher arte abstrata/animais lineares, não personagem.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 239,70</td>
+  <td class="num">R$ 239,70</td>
+  <td><a href="https://www.aluriakids.com.br/quadros/minimalista/">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier desejo">Desejo</span><br><strong>Mobile decorativo fora do berço</strong><br><span class="muted">Mercado Livre</span></td>
+  <td>Mobile para usar sobre trocador ou prateleira; não sobre grades do berço.<p class="styling">Serve mais para styling do que para sono.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 149,90</td>
+  <td class="num">R$ 149,90</td>
+  <td><a href="https://lista.mercadolivre.com.br/mobile-montessori-bebe-madeira-feltro-neutro">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Decoração: <strong>R$ 509,40</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Curadoria de compra</div>
+  <h2>Segurança</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Descrição + styling</th><th>Qtd.</th><th>Preço ref.</th><th>Total</th><th>Link</th></tr></thead>
+    <tbody>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Protetor de tomadas Safety 1st kit 10</strong><br><span class="muted">Safety 1st</span></td>
+  <td>Kit com 10 protetores de tomada.<p class="styling">Comprar agora, instalar quando o bebê começar a explorar.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 10,76</td>
+  <td class="num">R$ 10,76</td>
+  <td><a href="https://safety1st.com.br/collections/seguranca/products/protetor-de-tomadas-10-unidades">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Trava magnética Safety 1st kit 4</strong><br><span class="muted">Safety 1st</span></td>
+  <td>Travas invisíveis para gavetas/armários.<p class="styling">Instalar nas gavetas do Luna quando começar a engatinhar.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 64,90</td>
+  <td class="num">R$ 64,90</td>
+  <td><a href="https://safety1st.com.br/products/trava-magnetica">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Trava multifuncional Safety 1st</strong><br><span class="muted">Safety 1st</span></td>
+  <td>Travas flexíveis para portas ou gavetas.<p class="styling">Útil para armário existente e portas de correr.</p></td>
+  <td class="num">2</td>
+  <td class="num">R$ 19,90</td>
+  <td class="num">R$ 39,80</td>
+  <td><a href="https://safety1st.com.br/collections/travas-seguranca-armario-gaveta">Comprar / ver</a></td>
+</tr>
+<tr>
+  <td><span class="tier essencial">Essencial</span><br><strong>Trava infantil para janela de correr</strong><br><span class="muted">Mercado Livre</span></td>
+  <td>Limitador/trava para esquadria de correr.<p class="styling">Mesmo com tela externa, a trava é camada extra.</p></td>
+  <td class="num">1</td>
+  <td class="num">R$ 49,90</td>
+  <td class="num">R$ 49,90</td>
+  <td><a href="https://lista.mercadolivre.com.br/trava-janela-correr-infantil">Comprar / ver</a></td>
+</tr></tbody>
+  </table>
+  <p class="subtotal">Subtotal Segurança: <strong>R$ 165,36</strong></p>
+</section>
+
+<section class="page">
+  <div class="kicker">Ordem de compra</div>
+  <h2>Sequência para não errar</h2>
+  <ol class="checklist">
+    <li><strong>Medir antes de comprar:</strong> altura útil da cortina na PN e voltagem do ar-condicionado.</li>
+    <li><strong>Comprar âncoras:</strong> Luna, colchão e Clarice. Eles definem tudo.</li>
+    <li><strong>Resolver obra leve:</strong> pintura Cloud Dancer, AC, ponto de luz/dimmer.</li>
+    <li><strong>Instalar cortina e papel:</strong> antes da montagem final, para evitar sujeira nos móveis.</li>
+    <li><strong>Montar o styling:</strong> prateleiras PS, mesa, luz noturna, cestos, quadros.</li>
+    <li><strong>Finalizar segurança:</strong> protetor de tomadas, travas, janela, checagem de fios e cortina.</li>
+  </ol>
+  <div class="quote">Comprar menos, mas editar melhor. A estética Vogue nasce da seleção, não da quantidade.</div>
+</section>
+
+<section class="page">
+  <div class="kicker">Checklist final</div>
+  <h2>Lista rápida para WhatsApp</h2>
+  <ul class="checklist">
+    <li>Luna Branco/Savana + colchão 130x70x12</li>
+    <li>Clarice bouclé pérola/creme + puff</li>
+    <li>Prateleiras Luna na PS + mesa Gueridon branca</li>
+    <li>Blackout + voil + trilho suíço duplo na PN</li>
+    <li>Pintura Cloud Dancer + painel discreto PL</li>
+    <li>Plafon dimerizável + luz noturna + termo-higrômetro</li>
+    <li>AC 9.000 BTU inverter na PS, sem jato no berço</li>
+    <li>Tapete lavável bege/creme</li>
+    <li>Lençóis 100% algodão, protetores impermeáveis e sacos de dormir</li>
+    <li>Cestos, quadros minimalistas, kit higiene branco/dourado</li>
+    <li>Travas, protetores de tomada e trava de janela</li>
+  </ul>
+  <p class="footer-note">Preços e disponibilidade mudam. Conferir estoque, frete, prazo, voltagem, medidas e política de troca antes de finalizar a compra.</p>
+</section>
+
+<section class="page">
+  <div class="kicker">Dados estruturados</div>
+  <h2>Apêndice técnico</h2>
+  <p class="footer-note">Resumo JSON para futuras automações ou atualização de preços.</p>
+  <pre>[
+  {
+    &quot;category&quot;: &quot;Móveis âncora&quot;,
+    &quot;item&quot;: &quot;Berço Multifuncional Luna c/ Auxiliar Reller&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 2298.6,
+    &quot;link&quot;: &quot;https://www.angelinababy.com.br/bercos/berco-multifuncional-luna-moveis-reller?variant_id=3883&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Móveis âncora&quot;,
+    &quot;item&quot;: &quot;Colchão Baby Light Ortobom 130 x 70 x 12&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 456.0,
+    &quot;link&quot;: &quot;https://www.angelinababy.com.br/colchoes/colchao-baby-ligth-ortobom-130x70x12&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Móveis âncora&quot;,
+    &quot;item&quot;: &quot;Poltrona Clarice Giro + Balanço + Puff&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 1999.0,
+    &quot;link&quot;: &quot;https://produto.mercadolivre.com.br/MLB-4102544042-poltrona-de-amamentacao-clarice-giro-balanco-beb-completo-_JM&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Móveis complementares&quot;,
+    &quot;item&quot;: &quot;Kit 2 Prateleiras Luna 89,6 cm Savana&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 185.0,
+    &quot;link&quot;: &quot;https://www.prmoveis.com.br/produto/kit-2-prateleiras-luna-89-6cm-savana-fosco-com-alcas-de-couro-reller-moveis-115553&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Móveis complementares&quot;,
+    &quot;item&quot;: &quot;Mesa lateral redonda branca Gueridon 45 cm&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 349.9,
+    &quot;link&quot;: &quot;https://www.tokstok.com.br/mesa-lateral-redonda-45-cm-branco-gueridon/p&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Móveis complementares&quot;,
+    &quot;item&quot;: &quot;Kit higiene porcelana branco + dourado&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 139.8,
+    &quot;link&quot;: &quot;https://www.cirandaartecriativa.com.br/kit-higiene-porcelana-bebe-neutro-pote-algodao-cotonete&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Móveis complementares&quot;,
+    &quot;item&quot;: &quot;Lixeira inox pedal Tramontina 12 L&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 146.3,
+    &quot;link&quot;: &quot;https://www.tramontina.com.br/lixeira-com-pedal-tramontina-brasil-em-aco-inox-com-acabamento-polido-e-balde-interno-12-l/94538112.html&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Cortina e janela&quot;,
+    &quot;item&quot;: &quot;Cortina Basic Blackout 3,00 x 2,50 m trilho suíço&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 165.99,
+    &quot;link&quot;: &quot;https://www.laraconchegante.com.br/cortina-trilho-suico-300x250&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Cortina e janela&quot;,
+    &quot;item&quot;: &quot;Cortina blackout com linho 3,00 x 2,50 m&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 299.9,
+    &quot;link&quot;: &quot;https://www.ludatex.com.br/produtos/cortina-blackout-com-linho-300x250-para-trilho-suico/&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Cortina e janela&quot;,
+    &quot;item&quot;: &quot;Trilho suíço duplo branco 2 m&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 109.99,
+    &quot;link&quot;: &quot;https://www.doceaconchego.com.br/trilho-suico-duplo-para-parede-maxi-49mm-2-metros-aluminio-cor-branco/p/MLB26297408&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Cortina e janela&quot;,
+    &quot;item&quot;: &quot;Voil branco/off-white 3 m&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 129.9,
+    &quot;link&quot;: &quot;https://lista.mercadolivre.com.br/cortina-voil-branca-trilho-suico-3m&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Parede e acabamento&quot;,
+    &quot;item&quot;: &quot;Papel de parede Nuvem com Laço tons neutros&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 12,
+    &quot;price&quot;: 10.3,
+    &quot;link&quot;: &quot;https://lojadaparede.com.br/infantil/359-papel-de-parede-infantil-nuvem-com-laco-tons-neutros-adesivo-autocolante.html&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Parede e acabamento&quot;,
+    &quot;item&quot;: &quot;Papel de parede infantil laços neutros&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 199.9,
+    &quot;link&quot;: &quot;https://www.varonidecor.com.br/infantil/papel-de-parede-infantil-lacos-vr132&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Parede e acabamento&quot;,
+    &quot;item&quot;: &quot;Tinta equivalente Cloud Dancer 11-4201&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 260.0,
+    &quot;link&quot;: &quot;https://www.suvinil.com.br/produtos/tintas-para-paredes&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Iluminação&quot;,
+    &quot;item&quot;: &quot;Painel LED inteligente NEO Avant 24 W 2700K-6500K&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 109.9,
+    &quot;link&quot;: &quot;https://neoavant.com.br/products/avant-neo-painel-led-plafon-smart-sobrepor-24w-2700k-a-6500k-30cm-110v-220v-bivolt-quadrado-cod-291990734-neo-avant&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Iluminação&quot;,
+    &quot;item&quot;: &quot;Plafon Taschibra Liora On TW 30 W&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 390.9,
+    &quot;link&quot;: &quot;https://www.lumedecoronline.com.br/led/plafon-de-led/plafon-led-taschibra-liora-on-tw-30w-com-controle-remoto-quadrado-dimerizavel-e-multitemperatura&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Iluminação&quot;,
+    &quot;item&quot;: &quot;Luz noturna LED bebê USB dimerizável&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 39.9,
+    &quot;link&quot;: &quot;https://www.kindakids.com.br/luminaria-led/luz-noturna-led-bebe-usb-controle-remoto-dimerizavel-patinho&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Iluminação&quot;,
+    &quot;item&quot;: &quot;Perfil de alumínio + fita LED 2700K 1 m&quot;,
+    &quot;tier&quot;: &quot;Desejo&quot;,
+    &quot;qty&quot;: 2,
+    &quot;price&quot;: 106.9,
+    &quot;link&quot;: &quot;https://casaedetalhe.com.br/produto/perfil-aluminio-c-fita-led/&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Climatização&quot;,
+    &quot;item&quot;: &quot;LG Dual Inverter Compact + IA 9000 BTU 220 V&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 2179.0,
+    &quot;link&quot;: &quot;https://www.dufrio.com.br/ar-condicionado-split-dual-inverter-lg-compact-ia-s3nq09aaqak-eb2gam1-220v.html&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Climatização&quot;,
+    &quot;item&quot;: &quot;Instalação ar-condicionado + dreno + suporte&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 900.0,
+    &quot;link&quot;: &quot;https://www.getninjas.com.br/reformas-e-reparos/ar-condicionado/instalacao&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Climatização&quot;,
+    &quot;item&quot;: &quot;Termo-higrômetro BBLUV Igrö 2 em 1&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 249.9,
+    &quot;link&quot;: &quot;https://www.jhbabystore.com.br/bbluv-igro-termometro-higrometro-digital-2-em-1&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Climatização&quot;,
+    &quot;item&quot;: &quot;Termo-higrômetro Incoterm TH80&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 86.0,
+    &quot;link&quot;: &quot;https://www.laderquimica.com.br/termo-higrometro-digital-incoterm-th80-com-alarme-de-temperatura-e-umidade-medicao-interna-e-externa&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Climatização&quot;,
+    &quot;item&quot;: &quot;Umidificador Fisher-Price HC115 3,4 L&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 199.9,
+    &quot;link&quot;: &quot;https://www.farmacianacional.com.br/umidificador-fisher-price-3-4l-mtl-hc115-p557823-p180285&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Tapete e têxteis&quot;,
+    &quot;item&quot;: &quot;Tapete lavável infantil 200 x 140 cm Lorena Canals Bereber Beige&quot;,
+    &quot;tier&quot;: &quot;Desejo&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 2211.79,
+    &quot;link&quot;: &quot;https://www.bililababy.com.br/lorena-canals/tapete-bereber-beige&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Tapete e têxteis&quot;,
+    &quot;item&quot;: &quot;Tapete infantil lavável bege 200 x 150&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 299.0,
+    &quot;link&quot;: &quot;https://lista.mercadolivre.com.br/tapete-lavavel-quarto-infantil-bege-200x150&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Tapete e têxteis&quot;,
+    &quot;item&quot;: &quot;Almofada Boppy Chicco amamentação&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 249.0,
+    &quot;link&quot;: &quot;https://www.dafiti.com.br/Almofada-Chicco-Boppy-Sem-Capa-Branco-2968095.html&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Tapete e têxteis&quot;,
+    &quot;item&quot;: &quot;Manta tricot canelado blush 80 x 80&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 159.9,
+    &quot;link&quot;: &quot;https://www.bebefacil.com.br/manta-para-bebe-em-tricot-canelado-rosa-blush---mini-co/p&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Enxoval seguro&quot;,
+    &quot;item&quot;: &quot;Jogo lençol berço americano 3 peças 100% algodão&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 3,
+    &quot;price&quot;: 56.1,
+    &quot;link&quot;: &quot;https://baobababy.com.br/produto/jogo-de-lencol-3-pecas-berco-americano/&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Enxoval seguro&quot;,
+    &quot;item&quot;: &quot;Protetor colchão impermeável 130 x 70&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 2,
+    &quot;price&quot;: 44.91,
+    &quot;link&quot;: &quot;https://www.paraisodobebe.com.br/protetor-de-colch-o-130x70-impermeavel-matelado-premium&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Enxoval seguro&quot;,
+    &quot;item&quot;: &quot;Saco de dormir TOG 1.0 algodão&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 2,
+    &quot;price&quot;: 177.65,
+    &quot;link&quot;: &quot;https://www.casulodeanjo.com.br/collections/saco-de-dormir-bebe-0-a-12-meses/saco-de-dormir-em-algodao-natural-cogumelo&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Enxoval seguro&quot;,
+    &quot;item&quot;: &quot;Saco de dormir TOG 2.0&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 220.0,
+    &quot;link&quot;: &quot;https://www.comcarinhobaby.com/produtos/saquinho-de-dormir-tog-2-0-verde-calmaria/&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Organização&quot;,
+    &quot;item&quot;: &quot;Cesto organizador nuvem algodão 28 cm&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 2,
+    &quot;price&quot;: 92.64,
+    &quot;link&quot;: &quot;https://www.graodegente.com.br/produto/cesto-organizador-para-brinquedos-nuvem-de-algodao-28cm/&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Organização&quot;,
+    &quot;item&quot;: &quot;Cesto tricot onda natural&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 265.68,
+    &quot;link&quot;: &quot;https://www.quintaldemadame.com.br/decoracao/cestos/cesto-tricot-onda-natural&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Decoração&quot;,
+    &quot;item&quot;: &quot;Quadro infantil minimalista leão&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 2,
+    &quot;price&quot;: 59.9,
+    &quot;link&quot;: &quot;https://mundiminfantil.com/produtos/quadro-leao-minimalista-divertida/&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Decoração&quot;,
+    &quot;item&quot;: &quot;Kit quadros minimalistas infantil&quot;,
+    &quot;tier&quot;: &quot;Upgrade&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 239.7,
+    &quot;link&quot;: &quot;https://www.aluriakids.com.br/quadros/minimalista/&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Decoração&quot;,
+    &quot;item&quot;: &quot;Mobile decorativo fora do berço&quot;,
+    &quot;tier&quot;: &quot;Desejo&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 149.9,
+    &quot;link&quot;: &quot;https://lista.mercadolivre.com.br/mobile-montessori-bebe-madeira-feltro-neutro&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Segurança&quot;,
+    &quot;item&quot;: &quot;Protetor de tomadas Safety 1st kit 10&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 10.76,
+    &quot;link&quot;: &quot;https://safety1st.com.br/collections/seguranca/products/protetor-de-tomadas-10-unidades&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Segurança&quot;,
+    &quot;item&quot;: &quot;Trava magnética Safety 1st kit 4&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 64.9,
+    &quot;link&quot;: &quot;https://safety1st.com.br/products/trava-magnetica&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Segurança&quot;,
+    &quot;item&quot;: &quot;Trava multifuncional Safety 1st&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 2,
+    &quot;price&quot;: 19.9,
+    &quot;link&quot;: &quot;https://safety1st.com.br/collections/travas-seguranca-armario-gaveta&quot;
+  },
+  {
+    &quot;category&quot;: &quot;Segurança&quot;,
+    &quot;item&quot;: &quot;Trava infantil para janela de correr&quot;,
+    &quot;tier&quot;: &quot;Essencial&quot;,
+    &quot;qty&quot;: 1,
+    &quot;price&quot;: 49.9,
+    &quot;link&quot;: &quot;https://lista.mercadolivre.com.br/trava-janela-correr-infantil&quot;
+  }
+]</pre>
+</section>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Graphify cache and backups (regenerável)
+graphify-out/cache/
+graphify-out/2026-07-07/
+
+# Obsidian junction (conteúdo canônico no vault)
+100_quarto_bb/
+
+# Superpowers / agent state
+.superpowers/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/

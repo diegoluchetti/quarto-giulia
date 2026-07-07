@@ -1,0 +1,671 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "budget_couture_delivery_package",
+        "label": "Budget Couture Delivery Package",
+        "nodes": [
+          "docs_plans_budget_couture_plan",
+          "entregaveis_budget_couture_html",
+          "entregaveis_lista_compras_markdown"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md"
+      },
+      {
+        "id": "editorial_visual_assets",
+        "label": "Editorial Visual Assets",
+        "nodes": [
+          "assets_editorial_budget_couture_cover",
+          "assets_editorial_budget_couture_moodboard",
+          "assets_renders_layout_3d",
+          "assets_renders_layout_planta"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md"
+      },
+      {
+        "id": "layout_documentation_set",
+        "label": "Layout Documentation Set",
+        "nodes": [
+          "plantas_layout_v1",
+          "plantas_planta_baixa",
+          "100_quarto_bb_07_layout_mobiliario",
+          "100_quarto_bb_04_planta_baixa"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "README.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "build_budget_couture_pdf.py",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "build_budget_couture_pdf.py",
+      "id": "scripts_build_budget_couture_pdf",
+      "community_name": "Budget Couture PDF Generation"
+    },
+    {
+      "label": "Product",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "product",
+      "id": "scripts_build_budget_couture_pdf_product",
+      "community_name": "Budget Couture PDF Generation"
+    },
+    {
+      "label": "money()",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L80",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "money()",
+      "id": "scripts_build_budget_couture_pdf_money",
+      "community_name": "Budget Couture PDF Generation"
+    },
+    {
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L84",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "esc()",
+      "id": "scripts_build_budget_couture_pdf_esc",
+      "community_name": "Budget Couture PDF Generation"
+    },
+    {
+      "label": "copy_assets()",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L88",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "copy_assets()",
+      "id": "scripts_build_budget_couture_pdf_copy_assets",
+      "community_name": "File Management System"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "path",
+      "id": "path",
+      "community_name": "File Management System"
+    },
+    {
+      "label": "layout_svg()",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L106",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "layout_svg()",
+      "id": "scripts_build_budget_couture_pdf_layout_svg",
+      "community_name": "Budget Couture PDF Generation"
+    },
+    {
+      "label": "totals_by_priority()",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L136",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "totals_by_priority()",
+      "id": "scripts_build_budget_couture_pdf_totals_by_priority",
+      "community_name": "Budget Couture PDF Generation"
+    },
+    {
+      "label": "category_sections()",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L143",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "category_sections()",
+      "id": "scripts_build_budget_couture_pdf_category_sections",
+      "community_name": "Budget Couture PDF Generation"
+    },
+    {
+      "label": "markdown_list()",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L173",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "markdown_list()",
+      "id": "scripts_build_budget_couture_pdf_markdown_list",
+      "community_name": "File Management System"
+    },
+    {
+      "label": "build_html()",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L207",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "build_html()",
+      "id": "scripts_build_budget_couture_pdf_build_html",
+      "community_name": "Budget Couture PDF Generation"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L381",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "main()",
+      "id": "scripts_build_budget_couture_pdf_main",
+      "community_name": "File Management System"
+    },
+    {
+      "label": "Quarto BB Project Overview",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 5,
+      "norm_label": "quarto bb project overview",
+      "id": "readme_project_overview",
+      "community_name": "Bedroom Project Overview"
+    },
+    {
+      "label": "Budget Couture PDF Implementation Plan",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "budget couture pdf implementation plan",
+      "id": "docs_plans_budget_couture_plan",
+      "community_name": "Budget Couture Visual Assets"
+    },
+    {
+      "label": "Budget Couture HTML Dossier",
+      "file_type": "code",
+      "source_file": "entregaveis/quarto-bb-budget-couture.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "budget couture html dossier",
+      "id": "entregaveis_budget_couture_html",
+      "community_name": "Budget Couture Visual Assets"
+    },
+    {
+      "label": "Lista de Compras Budget Couture",
+      "file_type": "document",
+      "source_file": "entregaveis/quarto-bb-lista-compras-budget-couture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "lista de compras budget couture",
+      "id": "entregaveis_lista_compras_markdown",
+      "community_name": "Budget Couture Visual Assets"
+    },
+    {
+      "label": "Layout Mobili\u00e1rio V1",
+      "file_type": "document",
+      "source_file": "plantas/layout-v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "layout mobiliario v1",
+      "id": "plantas_layout_v1",
+      "community_name": "Furniture Layout Design"
+    },
+    {
+      "label": "Planta Baixa Quarto BB",
+      "file_type": "document",
+      "source_file": "plantas/planta-baixa-quarto-bb.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "planta baixa quarto bb",
+      "id": "plantas_planta_baixa",
+      "community_name": "Bedroom Floor Plan"
+    },
+    {
+      "label": "Budget Couture Cover Image",
+      "file_type": "image",
+      "source_file": "assets/editorial/budget-couture-cover-cloud-dancer.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "budget couture cover image",
+      "id": "assets_editorial_budget_couture_cover",
+      "community_name": "Budget Couture Visual Assets"
+    },
+    {
+      "label": "Budget Couture Moodboard Image",
+      "file_type": "image",
+      "source_file": "assets/editorial/budget-couture-moodboard-cloud-dancer.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "budget couture moodboard image",
+      "id": "assets_editorial_budget_couture_moodboard",
+      "community_name": "Budget Couture Visual Assets"
+    },
+    {
+      "label": "Layout 3D Render Cloud Dancer",
+      "file_type": "image",
+      "source_file": "assets/renders/layout-quarto-bb-cloud-dancer-v2-3d.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "layout 3d render cloud dancer",
+      "id": "assets_renders_layout_3d",
+      "community_name": "Budget Couture Visual Assets"
+    },
+    {
+      "label": "Layout Planta Render Cloud Dancer",
+      "file_type": "image",
+      "source_file": "assets/renders/layout-quarto-bb-cloud-dancer-v2-planta.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "layout planta render cloud dancer",
+      "id": "assets_renders_layout_planta",
+      "community_name": "Budget Couture Visual Assets"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_build_html"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_category_sections"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_copy_assets"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_esc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_layout_svg"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L381",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_markdown_list"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_money"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_product"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf",
+      "target": "scripts_build_budget_couture_pdf_totals_by_priority"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L329",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_build_html",
+      "target": "scripts_build_budget_couture_pdf_money"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L156",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_category_sections",
+      "target": "scripts_build_budget_couture_pdf_money"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_markdown_list",
+      "target": "scripts_build_budget_couture_pdf_money"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L375",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_build_html",
+      "target": "scripts_build_budget_couture_pdf_esc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L153",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_category_sections",
+      "target": "scripts_build_budget_couture_pdf_esc"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_copy_assets",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L384",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_main",
+      "target": "scripts_build_budget_couture_pdf_copy_assets"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_build_html",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L398",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_main",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L307",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_build_html",
+      "target": "scripts_build_budget_couture_pdf_layout_svg"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L336",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_build_html",
+      "target": "scripts_build_budget_couture_pdf_category_sections"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L386",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_main",
+      "target": "scripts_build_budget_couture_pdf_markdown_list"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_budget_couture_pdf.py",
+      "source_location": "L391",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_budget_couture_pdf_main",
+      "target": "scripts_build_budget_couture_pdf_build_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plans_budget_couture_plan",
+      "target": "assets_renders_layout_3d"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plans_budget_couture_plan",
+      "target": "assets_renders_layout_planta"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plans_budget_couture_plan",
+      "target": "entregaveis_budget_couture_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plans_budget_couture_plan",
+      "target": "entregaveis_lista_compras_markdown"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entregaveis/quarto-bb-budget-couture.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entregaveis_budget_couture_html",
+      "target": "assets_editorial_budget_couture_cover"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entregaveis/quarto-bb-budget-couture.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entregaveis_budget_couture_html",
+      "target": "assets_editorial_budget_couture_moodboard"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "budget_couture_delivery_package",
+      "label": "Budget Couture Delivery Package",
+      "nodes": [
+        "docs_plans_budget_couture_plan",
+        "entregaveis_budget_couture_html",
+        "entregaveis_lista_compras_markdown"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md"
+    },
+    {
+      "id": "editorial_visual_assets",
+      "label": "Editorial Visual Assets",
+      "nodes": [
+        "assets_editorial_budget_couture_cover",
+        "assets_editorial_budget_couture_moodboard",
+        "assets_renders_layout_3d",
+        "assets_renders_layout_planta"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md"
+    },
+    {
+      "id": "layout_documentation_set",
+      "label": "Layout Documentation Set",
+      "nodes": [
+        "plantas_layout_v1",
+        "plantas_planta_baixa",
+        "100_quarto_bb_07_layout_mobiliario",
+        "100_quarto_bb_04_planta_baixa"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md"
+    }
+  ]
+}
