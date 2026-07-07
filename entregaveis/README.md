@@ -1,30 +1,17 @@
-# Entregáveis — artefatos finais
+# Entregáveis
 
-Documentos prontos para compartilhar: dossiê editorial, lista de compras e PDF.
+## v2 (em construção — Fase 2)
 
-## Arquivos
+- Layout v2
+- Lista de compras v2
+- Dossiê HTML/PDF v2
 
-```
-entregaveis/
-├── quarto-bb-budget-couture.html          ← dossiê editorial interativo
-├── quarto-bb-budget-couture.pdf           ← versão PDF para impressão
-└── quarto-bb-lista-compras-budget-couture.md  ← lista com links BR e preços
-```
+Ver [`../docs/plans/2026-07-07-quarto-giulia-v2.md`](../docs/plans/2026-07-07-quarto-giulia-v2.md).
+
+## v1 arquivada
+
+[`archive/v1-budget-couture/`](archive/v1-budget-couture/) — *Budget Couture* (maio/2026), incluía berço/cômoda comprados. Obsoleto.
 
 ## Mapa Graphify
 
-**Comunidade:** Budget Couture Visual Assets
-
-| Nó no grafo | Arquivo |
-|-------------|---------|
-| Budget Couture HTML Dossier | `quarto-bb-budget-couture.html` |
-| Lista de Compras Budget Couture | `quarto-bb-lista-compras-budget-couture.md` |
-
-**Hyperedge:** *Budget Couture Delivery Package* — agrupa plano, HTML e lista de compras como pacote de entrega.
-
-**Conexões:**
-- HTML referencia imagens em [`../assets/editorial/`](../assets/editorial/)
-- Lista e HTML são gerados por [`../scripts/build_budget_couture_pdf.py`](../scripts/build_budget_couture_pdf.py)
-- Plano de implementação em [`../docs/plans/`](../docs/plans/)
-
-Consulte o grafo: [`../graphify-out/graph.html`](../graphify-out/graph.html)
+[`../graphify-out/graph.html`](../graphify-out/graph.html)

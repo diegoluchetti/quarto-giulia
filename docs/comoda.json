@@ -1,0 +1,32 @@
+{
+  "tipo": "comoda",
+  "origem": "presenteado",
+  "referencia_editorial": "Para um menino de ouro",
+  "status_dimensoes": "estimated",
+  "dimensoes_cm": {
+    "largura": 85,
+    "profundidade": 45,
+    "altura": 95
+  },
+  "cor": "branco",
+  "detalhes_cor": "puxadores_madeira_natural_formato_urso",
+  "material": "madeira_mdf_pintado",
+  "estrutura": "5_gavetas",
+  "gavetas": "2_superiores_menores_3_inferiores_largas",
+  "puxadores": "cabeca_urso_madeira_clara",
+  "funcao": "armazenamento_e_trocador",
+  "trocador": "colchonete_branco_no_topo",
+  "nota_cor": "Cliente confirmou: nenhum elemento azul nos móveis presenteados",
+  "fotos": [
+    "assets/fotos/moveis-presenteados/comoda-referencia.jpg"
+  ],
+  "integracao_soft_feminine": {
+    "vantagem": "Branco harmoniza direto com paleta blush/creme/off-white",
+    "opcional": "Manter puxadores urso (neutros) ou trocar por madeira redonda/dourado fosco",
+    "enxoval_trocador": "Capas neutras blush ou creme sobre trocador branco"
+  },
+  "pendencias": [
+    "medidas_reais",
+    "foto_peca_real"
+  ]
+}

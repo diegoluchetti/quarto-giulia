@@ -1,69 +1,45 @@
 # Quarto Giulia — workspace arquitetônico
 
-Design de interiores e material arquitetônico para **quarto de bebê** (conceito *Budget Couture / Cloud Dancer*).
+Design de interiores para **quarto de bebê feminino** (conceito *Soft Feminine Calm*). Nascimento previsto **outubro/2026**.
 
-## Mapa do projeto (Graphify)
+## Projeto v2 (julho/2026)
 
-O repositório foi mapeado com [Graphify](https://github.com/safishamsi/graphify) em um grafo de conhecimento navegável:
+| Campo | Valor |
+|-------|-------|
+| Ambiente | 2,54 × 2,54 m (6,45 m²), apto 3 quartos, sem suíte |
+| Móveis | Berço e cômoda **brancos presenteados** (sem azul) |
+| Paredes | Pintura + boiserie EVA + papel + rodapé LED |
+| Brief | [`docs/brief/2026-07-07-quarto-giulia-v2.md`](docs/brief/2026-07-07-quarto-giulia-v2.md) |
 
-| Artefato | Descrição |
-|----------|-----------|
-| [`graphify-out/graph.html`](graphify-out/graph.html) | Grafo interativo — abra no navegador |
-| [`graphify-out/GRAPH_REPORT.md`](graphify-out/GRAPH_REPORT.md) | Relatório: comunidades, conexões, lacunas |
-| [`graphify-out/graph.json`](graphify-out/graph.json) | Grafo em JSON para consultas (`graphify query`) |
-
-**Comunidades principais:** Budget Couture PDF Generation · Budget Couture Visual Assets · File Management System · Furniture Layout Design · Bedroom Floor Plan · Bedroom Project Overview
-
-**Nós centrais:** `build_html()`, `main()`, `Budget Couture PDF Implementation Plan`, `Budget Couture HTML Dossier`
-
-```bash
-# Regenerar o mapa (requer API key ou Ollama)
-graphify . --backend ollama
-graphify cluster-only .
-```
-
-## Estrutura do repositório
+## Estrutura
 
 ```
 quarto-giulia/
-├── 100_quarto_bb/          ← junction Obsidian (não versionado)
-├── assets/
-│   ├── editorial/          ← capa e moodboard do dossiê
-│   ├── fotos/              ← fotos do ambiente real
-│   ├── referencias/        ← referências visuais
-│   └── renders/            ← plantas e vistas 3D
 ├── docs/
-│   └── plans/              ← planos de implementação
-├── entregaveis/            ← HTML, PDF e listas finais
-├── graphify-out/           ← mapa Graphify (versionado)
-├── modelos/                ← modelos 3D (futuro)
-├── plantas/                ← espelhos das notas Obsidian
-└── scripts/                ← automação de build
+│   ├── brief/           ← requisitos v2
+│   ├── referencias/     ← planta elétrica
+│   ├── quarto.json      ← dimensões ambiente
+│   ├── berco.json       ← móvel presenteado
+│   └── comoda.json
+├── assets/fotos/
+│   ├── ambiente/        ← PL, PN, PO, PS
+│   └── moveis-presenteados/
+├── entregaveis/
+│   └── archive/v1-budget-couture/   ← v1 obsoleta
+├── plantas/
+└── graphify-out/
 ```
 
-## Sincronização com Obsidian (2nd_brain)
+## Mapa Graphify
 
-| Conteúdo | Onde fica |
-|----------|-----------|
-| Ideias, medidas, parâmetros, brief | `100_quarto_bb/` (junction → vault) |
-| Plantas, 3D, renders, entregáveis | Este repositório |
+[`graphify-out/graph.html`](graphify-out/graph.html) · [`GRAPH_REPORT.md`](graphify-out/GRAPH_REPORT.md)
 
-**Vault:** `C:\Users\Administrator\Projects\segundo-cerebro-ai\2nd-brain`  
-**Notas canônicas:** `100_quarto_bb/Index.md`, `06-projeto-interiores.md`, `07-layout-mobiliario.md`
+## v1 arquivada
 
-## Projeto atual
+*Budget Couture / Cloud Dancer* (maio/2026) em [`entregaveis/archive/v1-budget-couture/`](entregaveis/archive/v1-budget-couture/).
 
-- **Interiores:** `100_quarto_bb/06-projeto-interiores.md`
-- **Layout:** `100_quarto_bb/07-layout-mobiliario.md` · espelho em [`plantas/`](plantas/)
-- **Lista de compras:** [`entregaveis/quarto-bb-lista-compras-budget-couture.md`](entregaveis/quarto-bb-lista-compras-budget-couture.md)
-- **Dossiê editorial:** [`entregaveis/quarto-bb-budget-couture.html`](entregaveis/quarto-bb-budget-couture.html)
+## Pendências
 
-## Seções
-
-| Pasta | README |
-|-------|--------|
-| [`assets/`](assets/) | Visuais, renders e referências |
-| [`docs/`](docs/) | Planos e documentação de processo |
-| [`entregaveis/`](entregaveis/) | Artefatos finais para compartilhar |
-| [`plantas/`](plantas/) | Espelhos de planta e layout |
-| [`scripts/`](scripts/) | Scripts de build e automação |
+- Medidas reais berço e cômoda
+- Foto interruptor in loco
+- Fase 2: layout, lista compras, dossiê — ver [`docs/plans/2026-07-07-quarto-giulia-v2.md`](docs/plans/2026-07-07-quarto-giulia-v2.md)

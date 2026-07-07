@@ -1,8 +1,9 @@
 ---
-
-## sync: mirror
+sync: mirror
 source: 100_quarto_bb/04-planta-baixa
+status: obsolete_v1
+---
 
-Espelho da planta baixa. **Fonte canônica:** vault Obsidian `100_quarto_bb/04-planta-baixa.md`.
+Espelho da planta baixa v1. **Obsoleto** — quarto confirmado: **2,54 × 2,54 m** (ver [`docs/quarto.json`](../docs/quarto.json)).
 
-Abra o vault ou a pasta junction `100_quarto_bb/` neste workspace para editar.
+Fonte canônica: `100_quarto_bb/04-planta-baixa.md`

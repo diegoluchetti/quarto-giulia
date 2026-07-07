@@ -3,5 +3,45 @@
     "mtime": 1783437149.3297567,
     "ast_hash": "d5d20923e6ce838829f33651b9d339f0",
     "semantic_hash": "d5d20923e6ce838829f33651b9d339f0"
+  },
+  "docs/berco.json": {
+    "mtime": 1783441560.8250737,
+    "ast_hash": "ae9be6107a912a0d7ddde3375aab3a85",
+    "semantic_hash": "ae9be6107a912a0d7ddde3375aab3a85"
+  },
+  "docs/comoda.json": {
+    "mtime": 1783441557.5266266,
+    "ast_hash": "d1602d73c0db6248faf3442eabe9cb0c",
+    "semantic_hash": "d1602d73c0db6248faf3442eabe9cb0c"
+  },
+  "docs/quarto.json": {
+    "mtime": 1783441499.90886,
+    "ast_hash": "1e6d34f0540249c5e9737925b541ddf3",
+    "semantic_hash": "1e6d34f0540249c5e9737925b541ddf3"
+  },
+  "docs/plans/2026-05-17-budget-couture-pdf.md": {
+    "mtime": 1783437149.3297567,
+    "ast_hash": "3b3750bf215555d6eece1df59926ae6f",
+    "semantic_hash": "3b3750bf215555d6eece1df59926ae6f"
+  },
+  "assets/editorial/budget-couture-cover-cloud-dancer.png": {
+    "mtime": 1779066185.2800214,
+    "ast_hash": "7813edf3a4cde5f9a048fc7e94a2f2eb",
+    "semantic_hash": "7813edf3a4cde5f9a048fc7e94a2f2eb"
+  },
+  "assets/editorial/budget-couture-moodboard-cloud-dancer.png": {
+    "mtime": 1779066194.235528,
+    "ast_hash": "587c8184610fb486716c4facf75ad99c",
+    "semantic_hash": "587c8184610fb486716c4facf75ad99c"
+  },
+  "assets/renders/layout-quarto-bb-cloud-dancer-v2-3d.png": {
+    "mtime": 1779065360.4102027,
+    "ast_hash": "81578a40c996811e3e89921deab89396",
+    "semantic_hash": "81578a40c996811e3e89921deab89396"
+  },
+  "assets/renders/layout-quarto-bb-cloud-dancer-v2-planta.png": {
+    "mtime": 1779065352.6471446,
+    "ast_hash": "5eeb0f8bf3b65150345f0cc37e8ea5e2",
+    "semantic_hash": "5eeb0f8bf3b65150345f0cc37e8ea5e2"
   }
 }

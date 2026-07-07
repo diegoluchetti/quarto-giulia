@@ -1,0 +1,41 @@
+{
+  "tipo": "berco",
+  "origem": "presenteado",
+  "referencia_editorial": "Para um menino de ouro",
+  "status_dimensoes": "estimated",
+  "dimensoes_cm": {
+    "comprimento": 130,
+    "profundidade": 70,
+    "altura": 95
+  },
+  "colchao_cm": {
+    "comprimento": 130,
+    "largura": 70
+  },
+  "cor": "branco",
+  "material": "madeira",
+  "estilo": "classico_tradicional",
+  "caracteristicas": [
+    "cabeceira_alta_painel_com_moldura",
+    "grades_ripas_verticais",
+    "rodinhas_brancas_4"
+  ],
+  "nota_cor": "Cliente confirmou: nenhum elemento azul nos móveis presenteados",
+  "fotos": [
+    "assets/fotos/moveis-presenteados/berco-referencia.jpg"
+  ],
+  "enxoval_evitar": [
+    "estampas_fortes_ou_tematicas",
+    "mobile_ursos_sobre_grades",
+    "protetor_bumper_volumoso"
+  ],
+  "enxoval_desejado": [
+    "neutro_blush_creme_areia",
+    "lencol_130x70_algodao",
+    "saco_dormir_tog_adequado"
+  ],
+  "pendencias": [
+    "medidas_reais",
+    "foto_peca_real"
+  ]
+}

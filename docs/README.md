@@ -1,28 +1,26 @@
-# Docs — documentação de processo
+# Docs — documentação do projeto
 
-Planos de implementação e notas de processo do projeto.
+## v2 — Quarto Giulia (ativo)
 
-## Arquivos
+| Documento | Conteúdo |
+|-----------|----------|
+| [`brief/2026-07-07-quarto-giulia-v2.md`](brief/2026-07-07-quarto-giulia-v2.md) | Brief canônico |
+| [`brief/paleta-soft-feminine.md`](brief/paleta-soft-feminine.md) | Cores e materiais |
+| [`brief/sistema-paredes.md`](brief/sistema-paredes.md) | Boiserie EVA + papel + LED |
+| [`brief/escopo-eletrico-led.md`](brief/escopo-eletrico-led.md) | Retrofit 2 circuitos + dimmer |
+| [`brief/mobiliario-presenteado.md`](brief/mobiliario-presenteado.md) | Berço e cômoda brancos |
+| [`quarto.json`](quarto.json) | Ambiente 2,54×2,54 m |
+| [`berco.json`](berco.json) | Berço presenteado |
+| [`comoda.json`](comoda.json) | Cômoda branca trocador |
+| [`referencias/eletrica-apto-patio-clube.pdf`](referencias/eletrica-apto-patio-clube.pdf) | Planta elétrica |
 
-```
-docs/
-└── plans/
-    └── 2026-05-17-budget-couture-pdf.md    ← plano do dossiê Budget Couture
-```
+## Planos
+
+| Plano | Status |
+|-------|--------|
+| [`plans/2026-07-07-quarto-giulia-v2.md`](plans/2026-07-07-quarto-giulia-v2.md) | Fase 2 — artefatos |
+| [`plans/2026-05-17-budget-couture-pdf.md`](plans/2026-05-17-budget-couture-pdf.md) | v1 — obsoleto |
 
 ## Mapa Graphify
 
-**Comunidade:** Budget Couture Visual Assets (nó de planejamento)
-
-| Nó no grafo | Arquivo |
-|-------------|---------|
-| Budget Couture PDF Implementation Plan | `plans/2026-05-17-budget-couture-pdf.md` |
-
-**Conexões documentadas pelo Graphify:**
-- Plano → `assets/renders/layout-quarto-bb-cloud-dancer-v2-3d.png`
-- Plano → `assets/renders/layout-quarto-bb-cloud-dancer-v2-planta.png`
-- Plano → `entregaveis/quarto-bb-budget-couture.html`
-
-O plano descreve as tarefas de pesquisa de produtos, preparação de assets, geração do HTML e exportação para PDF.
-
-Consulte o grafo: [`../graphify-out/graph.html`](../graphify-out/graph.html)
+[`../graphify-out/graph.html`](../graphify-out/graph.html)

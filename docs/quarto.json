@@ -1,0 +1,46 @@
+{
+  "project": "quarto_giulia_v2",
+  "nome": "Quarto Giulia",
+  "apartamento": {
+    "empreendimento": "Pátio Condomínio Clube",
+    "quartos_total": 3,
+    "suite": false,
+    "layout_espelhado": true,
+    "planta_eletrica_ref": "docs/referencias/eletrica-apto-patio-clube.pdf"
+  },
+  "dimensoes": {
+    "largura_m": 2.54,
+    "profundidade_m": 2.54,
+    "area_m2": 6.45,
+    "pe_direito_m": 2.7,
+    "status": "confirmed",
+    "nota": "Pé-direito estimado padrão apto — confirmar in loco"
+  },
+  "paredes": {
+    "PL": "parede leste — candidata a boiserie + papel + berço",
+    "PN": "parede norte — janela + armário embutido",
+    "PO": "parede oeste — armário + porta",
+    "PS": "parede sul — AC + poltrona amamentação"
+  },
+  "materiais_estimados": {
+    "tinta_base_m2": 24,
+    "papel_parede_painel_m2": "4-6",
+    "eva_boiserie_m_linear": "8-12",
+    "fita_led_m": 10.5,
+    "perfil_rodape_led_m": 10.5,
+    "perimetro_bruto_m": 10.16,
+    "perimetro_util_m": 9.4,
+    "vao_porta_m": 0.8
+  },
+  "fotos_ambiente": [
+    "assets/fotos/ambiente/PL-01-parede-leste.png",
+    "assets/fotos/ambiente/PN-01-janela-armario.png",
+    "assets/fotos/ambiente/PO-01-armario-porta.png",
+    "assets/fotos/ambiente/PS-01-porta-PO-aberta.png"
+  ],
+  "pendencias": [
+    "pe_direito_real",
+    "foto_interruptor_in_loco",
+    "medidas_moveis_presenteados"
+  ]
+}
