@@ -1,56 +1,101 @@
-# Escopo elétrico e LED
+# Escopo elétrico e LED — Memorial v2
 
 ## Referência
 
 - Planta: [`../referencias/eletrica-apto-patio-clube.pdf`](../referencias/eletrica-apto-patio-clube.pdf)
 - Empreendimento: Pátio Condomínio Clube
 - `layout_espelhado: true`
-- Apartamento: 3 quartos (Giulia = quadrado 2,54×2,54 m, sem suíte)
+- Quarto Giulia: **2,54 × 2,54 m**, sem suíte, apto 3 quartos
 
-## Estado atual (por dormitório — planta tipo)
+## Estado atual (dormitório tipo)
 
-| Ponto | Qtd. |
-|-------|------|
-| Luz teto | 1 |
-| Interruptor simples | 1 (junto à porta) |
-| Tomada 220V | 3 |
-| Ponto TV | 1 |
+| Ponto | Qtd. | Localização típica |
+|-------|------|-------------------|
+| Luz teto | 1 | Centro do teto |
+| Interruptor simples | 1 | Junto à porta (PO no layout espelhado) |
+| Tomada 220V | 3 | Paredes laterais + TV |
+| Ponto TV | 1 | Parede oposta à porta |
 
 **Atenção:** *Não executar furos na região do quadro de luz* (hall).
 
-## Retrofit solicitado
+## Objetivo do retrofit
 
-Converter **interruptor único → 2 circuitos + dimmer LED**.
+Substituir interruptor único por **2 circuitos independentes**, sendo o circuito 2 controlado por **dimmer compatível com LED**.
 
-| Circuito | Carga | Controle |
-|----------|-------|----------|
-| **1 — Geral** | Luminária teto | Interruptor / tecla 1 |
-| **2 — Ambiente** | Fita LED rodapé + arandela | **Dimmer LED** / tecla 2 |
+```
+ANTES                          DEPOIS
+────────                       ──────
+[Interruptor]──► Luz teto      [Tecla 1]──────► Luz teto
+                               [Dimmer LED]───► Fita rodapé 10,5m
+                                                └──► Arandela PS
+```
 
-### Materiais elétricos preliminares
+## Circuitos
 
-- Interruptor duplo ou 2 módulos em caixa existente
-- Dimmer compatível com LED (mín. 5 W, verificar carga total fita)
-- Fita LED 2700K ~10,5 m + driver/blindagem
-- Perfil alumínio embutido ou sobreposto (rodapé)
-- Cabo adequado para derivação arandela
-- Arandela LED baixo fluxo (2700–3000K)
+| Circuito | Carga | Potência est. | Controle |
+|----------|-------|---------------|----------|
+| **C1 — Geral** | Luminária teto existente ou plafon LED | 10–30 W | Interruptor simples (tecla 1) |
+| **C2 — Ambiente** | Fita LED rodapé 2700K + arandela | 15–40 W total | **Dimmer LED** (tecla 2) |
 
-## Impacto do espelhamento
+### Fita LED rodapé
 
-Paredes com interruptor e tomadas **invertem** em relação à planta PDF. Usar fotos reais PL/PN/PO/PS para posicionar arandela (zona poltrona) e derivação LED.
+| Parâmetro | Especificação |
+|-----------|---------------|
+| Comprimento | **10,5 m** (perímetro 9,4 m + reserva) |
+| Temperatura | **2700K** (quente) |
+| Perfil | Alumínio embutido ou sobreposto tipo rodapé |
+| Driver | Compatível com dimmer (verificar carga mínima do dimmer, tip. 5 W) |
+| Instalação | Derivação na caixa do interruptor ou quadro do circuito |
+
+### Arandela
+
+| Parâmetro | Especificação |
+|-----------|---------------|
+| Posição | Parede **PS**, acima da poltrona amamentação |
+| Temperatura | 2700–3000K |
+| Fluxo | Baixo (indireto / abajur de parede) |
+| Circuito | **C2** (mesmo dimmer do LED rodapé) |
+
+## Materiais — lista para eletricista
+
+| Item | Qtd. | Observação |
+|------|------|------------|
+| Interruptor duplo 4×2 | 1 | Substituir módulo existente |
+| Dimmer LED bivolt | 1 | Mín. 5 W; testar com fita escolhida |
+| Fita LED 2700K 12V/24V | 10,5 m | Com driver se necessário |
+| Perfil alumínio | 10,5 m | Cantos com união |
+| Fonte/driver LED | 1 | Dimensionar para 10,5 m |
+| Arandela LED | 1 | Baixo fluxo, 2700K |
+| Cabo flexível 1,5 mm² | ~15 m | Derivações rodapé + arandela |
+| Caixa 4×2 profunda | 1 | Se dimmer + interruptor não couberem na caixa atual |
+
+### Links de referência (compra)
+
+- Interruptor + dimmer: https://lista.mercadolivre.com.br/interruptor-duplo-dimmer-led
+- Perfil + fita: https://casaedetalhe.com.br/produto/perfil-aluminio-c-fita-led/
+- Arandela: https://lista.mercadolivre.com.br/arandela-led-2700k-dimerizavel
+
+## Sequência de instalação
+
+1. Desligar circuito no disjuntor
+2. Substituir interruptor por módulo duplo (tecla + dimmer)
+3. Passar cabos do rodapé LED no rodapé/perfil (antes da pintura final se embutido)
+4. Instalar perfil + fita no perímetro (exceto vão porta ~80 cm)
+5. Derivar cabo para arandela na PS
+6. Testar dimmer em brilho mínimo/máximo
+7. Ajustar cena: mamada = rodapé 10–20%, arandela ligada; dia = teto C1
 
 ## Pendências
 
-- [ ] Foto interruptor real no quarto Giulia
-- [ ] Confirmar voltagem (planta indica 220V nas tomadas)
-- [ ] Definir se arandela compartilha circuito 2 com LED rodapé
+- [ ] Foto da caixa de interruptor existente (profundidade, neutro disponível)
+- [ ] Confirmar se luz teto atual é LED ou incandescente (define troca do bulbo)
+- [ ] Validar parede PS para arandela (sem tubulação/umidade)
 
-## Memorial para eletricista (rascunho)
+## Ordem de obra integrada
 
-```
-Entrada: interruptor simples existente (1 módulo)
-Saída:   módulo 1 → retorno luz teto (manter ou trocar por plafon LED)
-         módulo 2 → dimmer LED → fita rodapé (~10,5 m, 2700K) + arandela
-Derivação: alimentação contínua para LED se dimmer exigir neutro permanente
-```
+1. **Elétrica** (este memorial)
+2. Pintura base
+3. Boiserie EVA + massa + pintura
+4. Papel de parede
+5. Acabamento rodapé LED (tampa perfil)
+6. Móveis

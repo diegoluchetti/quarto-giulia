@@ -1,12 +1,14 @@
 # Entregáveis
 
-## v2 (em construção — Fase 2)
+## v2 (ativo)
 
-- Layout v2
-- Lista de compras v2
-- Dossiê HTML/PDF v2
+| Artefato | Arquivo |
+|----------|---------|
+| Lista de compras | [`quarto-giulia-lista-compras-v2.md`](quarto-giulia-lista-compras-v2.md) |
+| Dossiê HTML | [`quarto-giulia-v2.html`](quarto-giulia-v2.html) |
+| Dossiê PDF | [`quarto-giulia-v2.pdf`](quarto-giulia-v2.pdf) |
 
-Ver [`../docs/plans/2026-07-07-quarto-giulia-v2.md`](../docs/plans/2026-07-07-quarto-giulia-v2.md).
+Gerar: `python scripts/build_quarto_giulia_v2.py`
 
 ## v1 arquivada
 

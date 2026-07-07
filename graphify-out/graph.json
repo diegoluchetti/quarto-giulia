@@ -4,6 +4,57 @@
   "graph": {
     "hyperedges": [
       {
+        "id": "quarto_giulia_v2_brief_set",
+        "label": "Quarto Giulia v2 Brief Set",
+        "nodes": [
+          "docs_brief_2026_07_07_quarto_giulia_v2",
+          "docs_brief_sistema_paredes",
+          "docs_brief_escopo_eletrico_led",
+          "docs_brief_mobiliario_presenteado",
+          "docs_brief_paleta_soft_feminine"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md"
+      },
+      {
+        "id": "quarto_giulia_v2_design_system",
+        "label": "Quarto Giulia v2 Design System",
+        "nodes": [
+          "quarto_giulia_v2_concept",
+          "quarto_giulia_v2_dimensions",
+          "quarto_giulia_v2_led_lighting_system"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "source_file": "README.md"
+      },
+      {
+        "id": "quarto_giulia_v2_deliverables",
+        "label": "Quarto Giulia v2 Deliverables",
+        "nodes": [
+          "entregaveis_quarto_giulia_lista_compras_v2",
+          "entregaveis_quarto_giulia_v2_html",
+          "plantas_layout_v2"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "source_file": "entregaveis/README.md"
+      },
+      {
+        "id": "quarto_giulia_v2_electrical_system",
+        "label": "Quarto Giulia v2 Electrical System",
+        "nodes": [
+          "docs_brief_escopo_eletrico_led",
+          "quarto_giulia_v2_led_lighting_system",
+          "plantas_layout_v2"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "source_file": "docs/brief/escopo-eletrico-led.md"
+      },
+      {
         "id": "budget_couture_delivery_package",
         "label": "Budget Couture Delivery Package",
         "nodes": [
@@ -29,47 +80,6 @@
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
         "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md"
-      },
-      {
-        "id": "quarto_giulia_v2_brief_set",
-        "label": "Quarto Giulia v2 Brief Set",
-        "nodes": [
-          "docs_brief_2026_07_07_quarto_giulia_v2",
-          "docs_brief_sistema_paredes",
-          "docs_brief_escopo_eletrico_led",
-          "docs_brief_mobiliario_presenteado",
-          "docs_brief_paleta_soft_feminine"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md"
-      },
-      {
-        "id": "quarto_giulia_v2_json_data",
-        "label": "Quarto Giulia v2 JSON Data Files",
-        "nodes": [
-          "docs_quarto_json",
-          "docs_berco_json",
-          "docs_comoda_json"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "README.md"
-      },
-      {
-        "id": "layout_documentation_set",
-        "label": "Layout Documentation Set",
-        "nodes": [
-          "plantas_planta_baixa_quarto_bb",
-          "plantas_layout_v1",
-          "docs_quarto_json"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "plantas/README.md"
       }
     ]
   },
@@ -215,7 +225,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "budget couture html dossier",
       "community_name": "Budget Couture PDF Implementation Plan",
       "id": "entregaveis_budget_couture_html"
@@ -229,7 +239,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "lista de compras budget couture",
       "community_name": "Budget Couture PDF Implementation Plan",
       "id": "entregaveis_lista_compras_markdown"
@@ -243,10 +253,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "budget couture pdf implementation plan",
-      "id": "docs_plans_budget_couture_plan",
-      "community_name": "Budget Couture PDF Implementation Plan"
+      "community_name": "Budget Couture PDF Implementation Plan",
+      "id": "docs_plans_budget_couture_plan"
     },
     {
       "label": "Budget Couture Cover Image",
@@ -257,10 +267,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "budget couture cover image",
-      "id": "assets_editorial_budget_couture_cover",
-      "community_name": "Budget Couture PDF Implementation Plan"
+      "community_name": "Budget Couture PDF Implementation Plan",
+      "id": "assets_editorial_budget_couture_cover"
     },
     {
       "label": "Budget Couture Moodboard Image",
@@ -271,10 +281,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "budget couture moodboard image",
-      "id": "assets_editorial_budget_couture_moodboard",
-      "community_name": "Budget Couture PDF Implementation Plan"
+      "community_name": "Budget Couture PDF Implementation Plan",
+      "id": "assets_editorial_budget_couture_moodboard"
     },
     {
       "label": "Layout 3D Render Cloud Dancer",
@@ -285,10 +295,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "layout 3d render cloud dancer",
-      "id": "assets_renders_layout_3d",
-      "community_name": "Budget Couture PDF Implementation Plan"
+      "community_name": "Budget Couture PDF Implementation Plan",
+      "id": "assets_renders_layout_3d"
     },
     {
       "label": "Layout Planta Render Cloud Dancer",
@@ -299,24 +309,140 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 5,
       "norm_label": "layout planta render cloud dancer",
-      "id": "assets_renders_layout_planta",
-      "community_name": "Budget Couture PDF Implementation Plan"
+      "community_name": "Budget Couture PDF Implementation Plan",
+      "id": "assets_renders_layout_planta"
     },
     {
-      "label": "README.md",
+      "label": "docs/quarto.json",
       "file_type": "document",
-      "source_file": "README.md",
+      "source_file": "docs/quarto.json",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
-      "norm_label": "readme.md",
-      "id": "readme",
-      "community_name": "docs/berco.json"
+      "community": 2,
+      "norm_label": "docs/quarto.json",
+      "community_name": "docs/quarto.json",
+      "id": "docs_quarto_json"
+    },
+    {
+      "label": "docs/berco.json",
+      "file_type": "document",
+      "source_file": "docs/berco.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "docs/berco.json",
+      "community_name": "docs/brief/2026-07-07-quarto-giulia-v2.md",
+      "id": "docs_berco_json"
+    },
+    {
+      "label": "docs/comoda.json",
+      "file_type": "document",
+      "source_file": "docs/comoda.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "docs/comoda.json",
+      "community_name": "docs/brief/2026-07-07-quarto-giulia-v2.md",
+      "id": "docs_comoda_json"
+    },
+    {
+      "label": "build_quarto_giulia_v2.py",
+      "file_type": "code",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "build_quarto_giulia_v2.py",
+      "id": "scripts_build_quarto_giulia_v2",
+      "community_name": "build_quarto_giulia_v2.py"
+    },
+    {
+      "label": "Product",
+      "file_type": "code",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "product",
+      "id": "scripts_build_quarto_giulia_v2_product",
+      "community_name": "build_quarto_giulia_v2.py"
+    },
+    {
+      "label": "money()",
+      "file_type": "code",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L58",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "money()",
+      "id": "scripts_build_quarto_giulia_v2_money",
+      "community_name": "build_quarto_giulia_v2.py"
+    },
+    {
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "esc()",
+      "id": "scripts_build_quarto_giulia_v2_esc",
+      "community_name": "build_quarto_giulia_v2.py"
+    },
+    {
+      "label": "layout_svg()",
+      "file_type": "code",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L66",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "layout_svg()",
+      "id": "scripts_build_quarto_giulia_v2_layout_svg",
+      "community_name": "build_quarto_giulia_v2.py"
+    },
+    {
+      "label": "category_sections()",
+      "file_type": "code",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L89",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "category_sections()",
+      "id": "scripts_build_quarto_giulia_v2_category_sections",
+      "community_name": "build_quarto_giulia_v2.py"
+    },
+    {
+      "label": "build_html()",
+      "file_type": "code",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L120",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "build_html()",
+      "id": "scripts_build_quarto_giulia_v2_build_html",
+      "community_name": "build_quarto_giulia_v2.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L233",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "main()",
+      "id": "scripts_build_quarto_giulia_v2_main",
+      "community_name": "build_quarto_giulia_v2.py"
     },
     {
       "label": "assets/README.md",
@@ -327,7 +453,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "assets/readme.md",
       "id": "assets_readme",
       "community_name": "docs/quarto.json"
@@ -361,20 +487,6 @@
       "community_name": "docs/brief/2026-07-07-quarto-giulia-v2.md"
     },
     {
-      "label": "docs/brief/escopo-eletrico-led.md",
-      "file_type": "document",
-      "source_file": "docs/brief/escopo-eletrico-led.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "docs/brief/escopo-eletrico-led.md",
-      "id": "docs_brief_escopo_eletrico_led",
-      "community_name": "docs/brief/2026-07-07-quarto-giulia-v2.md"
-    },
-    {
       "label": "docs/brief/mobiliario-presenteado.md",
       "file_type": "document",
       "source_file": "docs/brief/mobiliario-presenteado.md",
@@ -383,10 +495,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 3,
       "norm_label": "docs/brief/mobiliario-presenteado.md",
       "id": "docs_brief_mobiliario_presenteado",
-      "community_name": "docs/berco.json"
+      "community_name": "docs/brief/2026-07-07-quarto-giulia-v2.md"
     },
     {
       "label": "docs/brief/paleta-soft-feminine.md",
@@ -425,10 +537,80 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 3,
       "norm_label": "docs/plans/2026-07-07-quarto-giulia-v2.md",
       "id": "docs_plans_2026_07_07_quarto_giulia_v2",
-      "community_name": "docs/plans/2026-07-07-quarto-giulia-v2.md"
+      "community_name": "docs/brief/2026-07-07-quarto-giulia-v2.md"
+    },
+    {
+      "label": "entregaveis/archive/v1-budget-couture/README.md",
+      "file_type": "document",
+      "source_file": "entregaveis/archive/v1-budget-couture/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 6,
+      "norm_label": "entregaveis/archive/v1-budget-couture/readme.md",
+      "id": "entregaveis_archive_v1_budget_couture_readme",
+      "community_name": "entregaveis/archive/v1-budget-couture/README.md"
+    },
+    {
+      "label": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html",
+      "file_type": "document",
+      "source_file": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 6,
+      "norm_label": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html",
+      "id": "entregaveis_archive_v1_budget_couture_quarto_bb_budget_couture_html",
+      "community_name": "entregaveis/archive/v1-budget-couture/README.md"
+    },
+    {
+      "label": "entregaveis/archive/v1-budget-couture/quarto-bb-lista-compras-budget-couture.md",
+      "file_type": "document",
+      "source_file": "entregaveis/archive/v1-budget-couture/quarto-bb-lista-compras-budget-couture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 6,
+      "norm_label": "entregaveis/archive/v1-budget-couture/quarto-bb-lista-compras-budget-couture.md",
+      "id": "entregaveis_archive_v1_budget_couture_quarto_bb_lista_compras_budget_couture_md",
+      "community_name": "entregaveis/archive/v1-budget-couture/README.md"
+    },
+    {
+      "label": "plantas/layout-v1.md",
+      "file_type": "document",
+      "source_file": "plantas/layout-v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 7,
+      "norm_label": "plantas/layout-v1.md",
+      "id": "plantas_layout_v1",
+      "community_name": "layout-quarto-bb-calma-savana-3d.png"
+    },
+    {
+      "label": "plantas/planta-baixa-quarto-bb.md",
+      "file_type": "document",
+      "source_file": "plantas/planta-baixa-quarto-bb.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "plantas/planta-baixa-quarto-bb.md",
+      "id": "plantas_planta_baixa_quarto_bb",
+      "community_name": "docs/quarto.json"
     },
     {
       "label": "docs/referencias/eletrica-apto-patio-clube.pdf",
@@ -445,160 +627,6 @@
       "community_name": "docs/brief/2026-07-07-quarto-giulia-v2.md"
     },
     {
-      "label": "entregaveis/README.md",
-      "file_type": "document",
-      "source_file": "entregaveis/README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "entregaveis/readme.md",
-      "id": "entregaveis_readme",
-      "community_name": "docs/plans/2026-07-07-quarto-giulia-v2.md"
-    },
-    {
-      "label": "entregaveis/archive/v1-budget-couture/README.md",
-      "file_type": "document",
-      "source_file": "entregaveis/archive/v1-budget-couture/README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "entregaveis/archive/v1-budget-couture/readme.md",
-      "id": "entregaveis_archive_v1_budget_couture_readme",
-      "community_name": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html"
-    },
-    {
-      "label": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html",
-      "file_type": "document",
-      "source_file": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html",
-      "id": "entregaveis_archive_v1_budget_couture_quarto_bb_budget_couture_html",
-      "community_name": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html"
-    },
-    {
-      "label": "entregaveis/archive/v1-budget-couture/quarto-bb-lista-compras-budget-couture.md",
-      "file_type": "document",
-      "source_file": "entregaveis/archive/v1-budget-couture/quarto-bb-lista-compras-budget-couture.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "entregaveis/archive/v1-budget-couture/quarto-bb-lista-compras-budget-couture.md",
-      "id": "entregaveis_archive_v1_budget_couture_quarto_bb_lista_compras_budget_couture_md",
-      "community_name": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html"
-    },
-    {
-      "label": "plantas/README.md",
-      "file_type": "document",
-      "source_file": "plantas/README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "plantas/readme.md",
-      "id": "plantas_readme",
-      "community_name": "plantas/planta-baixa-quarto-bb.md"
-    },
-    {
-      "label": "plantas/layout-v1.md",
-      "file_type": "document",
-      "source_file": "plantas/layout-v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "plantas/layout-v1.md",
-      "id": "plantas_layout_v1",
-      "community_name": "plantas/planta-baixa-quarto-bb.md"
-    },
-    {
-      "label": "plantas/planta-baixa-quarto-bb.md",
-      "file_type": "document",
-      "source_file": "plantas/planta-baixa-quarto-bb.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "plantas/planta-baixa-quarto-bb.md",
-      "id": "plantas_planta_baixa_quarto_bb",
-      "community_name": "plantas/planta-baixa-quarto-bb.md"
-    },
-    {
-      "label": "scripts/README.md",
-      "file_type": "document",
-      "source_file": "scripts/README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "scripts/readme.md",
-      "id": "scripts_readme",
-      "community_name": "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html"
-    },
-    {
-      "label": "docs/quarto.json",
-      "file_type": "document",
-      "source_file": "docs/quarto.json",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "docs/quarto.json",
-      "id": "docs_quarto_json",
-      "community_name": "docs/quarto.json"
-    },
-    {
-      "label": "docs/berco.json",
-      "file_type": "document",
-      "source_file": "docs/berco.json",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "docs/berco.json",
-      "id": "docs_berco_json",
-      "community_name": "docs/berco.json"
-    },
-    {
-      "label": "docs/comoda.json",
-      "file_type": "document",
-      "source_file": "docs/comoda.json",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "docs/comoda.json",
-      "id": "docs_comoda_json",
-      "community_name": "docs/berco.json"
-    },
-    {
       "label": "PL-01-parede-leste.png",
       "file_type": "image",
       "source_file": "assets/fotos/ambiente/PL-01-parede-leste.png",
@@ -607,7 +635,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pl-01-parede-leste.png",
       "id": "assets_fotos_ambiente_pl_01_parede_leste_png",
       "community_name": "docs/quarto.json"
@@ -621,7 +649,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pn-01-janela-armario.png",
       "id": "assets_fotos_ambiente_pn_01_janela_armario_png",
       "community_name": "docs/quarto.json"
@@ -635,7 +663,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "po-01-armario-porta.png",
       "id": "assets_fotos_ambiente_po_01_armario_porta_png",
       "community_name": "docs/quarto.json"
@@ -649,7 +677,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "ps-01-porta-po-aberta.png",
       "id": "assets_fotos_ambiente_ps_01_porta_po_aberta_png",
       "community_name": "docs/quarto.json"
@@ -663,7 +691,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "berco-referencia.jpg",
       "id": "assets_fotos_moveis_presenteados_berco_referencia_jpg",
       "community_name": "docs/quarto.json"
@@ -677,7 +705,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "comoda-referencia.jpg",
       "id": "assets_fotos_moveis_presenteados_comoda_referencia_jpg",
       "community_name": "docs/quarto.json"
@@ -691,10 +719,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 7,
       "norm_label": "layout-quarto-bb-calma-savana-3d.png",
       "id": "assets_renders_layout_quarto_bb_calma_savana_3d_png",
-      "community_name": "plantas/planta-baixa-quarto-bb.md"
+      "community_name": "layout-quarto-bb-calma-savana-3d.png"
     },
     {
       "label": "layout-quarto-bb-planta-3d-topo.png",
@@ -705,10 +733,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 2,
       "norm_label": "layout-quarto-bb-planta-3d-topo.png",
       "id": "assets_renders_layout_quarto_bb_planta_3d_topo_png",
-      "community_name": "plantas/planta-baixa-quarto-bb.md"
+      "community_name": "docs/quarto.json"
     },
     {
       "label": "eletrica-apto-patio-clube.png",
@@ -723,6 +751,114 @@
       "norm_label": "eletrica-apto-patio-clube.png",
       "id": "docs_referencias_eletrica_apto_patio_clube_png",
       "community_name": "docs/brief/2026-07-07-quarto-giulia-v2.md"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "community": 1,
+      "norm_label": "readme.md",
+      "id": "readme",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "Escopo el\u00e9trico e LED",
+      "file_type": "document",
+      "source_file": "docs/brief/escopo-eletrico-led.md",
+      "community": 1,
+      "norm_label": "escopo eletrico e led",
+      "id": "docs_brief_escopo_eletrico_led",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "Entreg\u00e1veis README",
+      "file_type": "document",
+      "source_file": "entregaveis/README.md",
+      "community": 1,
+      "norm_label": "entregaveis readme",
+      "id": "entregaveis_readme",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "Lista de Compras v2",
+      "file_type": "document",
+      "source_file": "entregaveis/quarto-giulia-lista-compras-v2.md",
+      "community": 1,
+      "norm_label": "lista de compras v2",
+      "id": "entregaveis_quarto_giulia_lista_compras_v2",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "Dossi\u00ea HTML v2",
+      "file_type": "document",
+      "source_file": "entregaveis/quarto-giulia-v2.html",
+      "community": 1,
+      "norm_label": "dossie html v2",
+      "id": "entregaveis_quarto_giulia_v2_html",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "Plantas README",
+      "file_type": "document",
+      "source_file": "plantas/README.md",
+      "community": 1,
+      "norm_label": "plantas readme",
+      "id": "plantas_readme",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "Layout v2",
+      "file_type": "document",
+      "source_file": "plantas/layout-v2.md",
+      "community": 1,
+      "norm_label": "layout v2",
+      "id": "plantas_layout_v2",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "Scripts README",
+      "file_type": "document",
+      "source_file": "scripts/README.md",
+      "community": 8,
+      "norm_label": "scripts readme",
+      "id": "scripts_readme",
+      "community_name": "Scripts README"
+    },
+    {
+      "label": "Planta el\u00e9trica refer\u00eancia",
+      "file_type": "document",
+      "source_file": "docs/referencias/eletrica-apto-patio-clube.pdf",
+      "community": 1,
+      "norm_label": "planta eletrica referencia",
+      "id": "docs_referencias_eletrica_apto_patio_clube",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "Soft Feminine Calm Concept",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "community": 1,
+      "norm_label": "soft feminine calm concept",
+      "id": "quarto_giulia_v2_concept",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "Quarto Dimensions 2.54x2.54m",
+      "file_type": "concept",
+      "source_file": "plantas/layout-v2.md",
+      "community": 1,
+      "norm_label": "quarto dimensions 2.54x2.54m",
+      "id": "quarto_giulia_v2_dimensions",
+      "community_name": "Escopo el\u00e9trico e LED"
+    },
+    {
+      "label": "LED Lighting System",
+      "file_type": "concept",
+      "source_file": "docs/brief/escopo-eletrico-led.md",
+      "community": 1,
+      "norm_label": "led lighting system",
+      "id": "quarto_giulia_v2_led_lighting_system",
+      "community_name": "Escopo el\u00e9trico e LED"
     }
   ],
   "links": [
@@ -1030,54 +1166,308 @@
       "target": "assets_renders_layout_planta"
     },
     {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "assets/fotos/ambiente/PL-01-parede-leste.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_fotos_ambiente_pl_01_parede_leste_png",
+      "target": "docs_quarto_json"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "assets/fotos/ambiente/PN-01-janela-armario.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_fotos_ambiente_pn_01_janela_armario_png",
+      "target": "docs_quarto_json"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "assets/fotos/ambiente/PO-01-armario-porta.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_fotos_ambiente_po_01_armario_porta_png",
+      "target": "docs_quarto_json"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "assets/fotos/ambiente/PS-01-porta-PO-aberta.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_fotos_ambiente_ps_01_porta_po_aberta_png",
+      "target": "docs_quarto_json"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "README.md",
+      "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "readme",
+      "source": "docs_brief_2026_07_07_quarto_giulia_v2",
+      "target": "docs_quarto_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/2026-07-07-quarto-giulia-v2.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_plans_2026_07_07_quarto_giulia_v2",
+      "target": "docs_quarto_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_readme",
+      "target": "docs_quarto_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "plantas/planta-baixa-quarto-bb.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plantas_planta_baixa_quarto_bb",
+      "target": "docs_quarto_json"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "assets/fotos/moveis-presenteados/berco-referencia.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_fotos_moveis_presenteados_berco_referencia_jpg",
       "target": "docs_berco_json"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "README.md",
+      "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "readme",
-      "target": "docs_brief_2026_07_07_quarto_giulia_v2"
+      "source": "docs_brief_2026_07_07_quarto_giulia_v2",
+      "target": "docs_berco_json"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "README.md",
+      "source_file": "docs/brief/mobiliario-presenteado.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "readme",
+      "source": "docs_brief_mobiliario_presenteado",
+      "target": "docs_berco_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_readme",
+      "target": "docs_berco_json"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "assets/fotos/moveis-presenteados/comoda-referencia.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_fotos_moveis_presenteados_comoda_referencia_jpg",
       "target": "docs_comoda_json"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "README.md",
+      "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "readme",
-      "target": "docs_plans_2026_07_07_quarto_giulia_v2"
+      "source": "docs_brief_2026_07_07_quarto_giulia_v2",
+      "target": "docs_comoda_json"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "README.md",
+      "source_file": "docs/brief/mobiliario-presenteado.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "readme",
-      "target": "docs_quarto_json"
+      "source": "docs_brief_mobiliario_presenteado",
+      "target": "docs_comoda_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_readme",
+      "target": "docs_comoda_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "entregaveis/README.md",
+      "confidence_score": 1.0,
+      "source": "entregaveis_readme",
+      "target": "scripts_build_quarto_giulia_v2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2",
+      "target": "scripts_build_quarto_giulia_v2_build_html"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2",
+      "target": "scripts_build_quarto_giulia_v2_category_sections"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2",
+      "target": "scripts_build_quarto_giulia_v2_esc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2",
+      "target": "scripts_build_quarto_giulia_v2_layout_svg"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L233",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2",
+      "target": "scripts_build_quarto_giulia_v2_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2",
+      "target": "scripts_build_quarto_giulia_v2_money"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2",
+      "target": "scripts_build_quarto_giulia_v2_product"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L208",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2_build_html",
+      "target": "scripts_build_quarto_giulia_v2_money"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2_category_sections",
+      "target": "scripts_build_quarto_giulia_v2_money"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2_category_sections",
+      "target": "scripts_build_quarto_giulia_v2_esc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L191",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2_build_html",
+      "target": "scripts_build_quarto_giulia_v2_layout_svg"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L213",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2_build_html",
+      "target": "scripts_build_quarto_giulia_v2_category_sections"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build_quarto_giulia_v2.py",
+      "source_location": "L236",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_quarto_giulia_v2_main",
+      "target": "scripts_build_quarto_giulia_v2_build_html"
     },
     {
       "relation": "references",
@@ -1147,16 +1537,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "docs_readme",
-      "target": "docs_berco_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_readme",
       "target": "docs_brief_2026_07_07_quarto_giulia_v2"
     },
     {
@@ -1207,16 +1587,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "docs_readme",
-      "target": "docs_comoda_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_readme",
       "target": "docs_plans_2026_07_07_quarto_giulia_v2"
     },
     {
@@ -1227,27 +1597,7 @@
       "source_location": null,
       "weight": 1.0,
       "source": "docs_readme",
-      "target": "docs_quarto_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_readme",
       "target": "docs_referencias_eletrica_apto_patio_clube_pdf"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_brief_2026_07_07_quarto_giulia_v2",
-      "target": "docs_berco_json"
     },
     {
       "relation": "references",
@@ -1297,26 +1647,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "docs_brief_2026_07_07_quarto_giulia_v2",
-      "target": "docs_comoda_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_brief_2026_07_07_quarto_giulia_v2",
-      "target": "docs_quarto_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_brief_2026_07_07_quarto_giulia_v2",
       "target": "docs_referencias_eletrica_apto_patio_clube_pdf"
     },
     {
@@ -1333,66 +1663,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "docs/brief/escopo-eletrico-led.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_brief_escopo_eletrico_led",
-      "target": "docs_referencias_eletrica_apto_patio_clube_pdf"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/brief/mobiliario-presenteado.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_brief_mobiliario_presenteado",
-      "target": "docs_berco_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/brief/mobiliario-presenteado.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_brief_mobiliario_presenteado",
-      "target": "docs_comoda_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/2026-07-07-quarto-giulia-v2.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_plans_2026_07_07_quarto_giulia_v2",
-      "target": "docs_quarto_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "entregaveis/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "entregaveis_readme",
-      "target": "docs_plans_2026_07_07_quarto_giulia_v2"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
-      "source_file": "docs/referencias/eletrica-apto-patio-clube.png",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_referencias_eletrica_apto_patio_clube_png",
-      "target": "docs_referencias_eletrica_apto_patio_clube_pdf"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "entregaveis/archive/v1-budget-couture/README.md",
       "source_location": null,
       "weight": 1.0,
@@ -1408,46 +1678,6 @@
       "weight": 1.0,
       "source": "entregaveis_archive_v1_budget_couture_readme",
       "target": "entregaveis_archive_v1_budget_couture_quarto_bb_lista_compras_budget_couture_md"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "scripts_readme",
-      "target": "entregaveis_archive_v1_budget_couture_quarto_bb_budget_couture_html"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "scripts_readme",
-      "target": "entregaveis_archive_v1_budget_couture_quarto_bb_lista_compras_budget_couture_md"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "plantas/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plantas_readme",
-      "target": "plantas_layout_v1"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "plantas/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plantas_readme",
-      "target": "plantas_planta_baixa_quarto_bb"
     },
     {
       "relation": "conceptually_related_to",
@@ -1470,77 +1700,180 @@
       "target": "plantas_planta_baixa_quarto_bb"
     },
     {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/referencias/eletrica-apto-patio-clube.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_referencias_eletrica_apto_patio_clube_png",
+      "target": "docs_referencias_eletrica_apto_patio_clube_pdf"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "confidence_score": 1.0,
-      "source_file": "plantas/planta-baixa-quarto-bb.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plantas_planta_baixa_quarto_bb",
-      "target": "docs_quarto_json"
+      "source": "readme",
+      "target": "docs_brief_escopo_eletrico_led"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "confidence_score": 1.0,
+      "source": "readme",
+      "target": "entregaveis_quarto_giulia_lista_compras_v2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "confidence_score": 1.0,
+      "source": "readme",
+      "target": "entregaveis_quarto_giulia_v2_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "confidence_score": 1.0,
+      "source": "readme",
+      "target": "plantas_layout_v2"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "assets/fotos/ambiente/PL-01-parede-leste.png",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "assets_fotos_ambiente_pl_01_parede_leste_png",
-      "target": "docs_quarto_json"
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "confidence_score": 1.0,
+      "source": "readme",
+      "target": "quarto_giulia_v2_concept"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/brief/escopo-eletrico-led.md",
+      "confidence_score": 1.0,
+      "source": "docs_brief_escopo_eletrico_led",
+      "target": "docs_referencias_eletrica_apto_patio_clube"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "assets/fotos/ambiente/PN-01-janela-armario.png",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "assets_fotos_ambiente_pn_01_janela_armario_png",
-      "target": "docs_quarto_json"
+      "confidence": "EXTRACTED",
+      "source_file": "docs/brief/escopo-eletrico-led.md",
+      "confidence_score": 1.0,
+      "source": "docs_brief_escopo_eletrico_led",
+      "target": "quarto_giulia_v2_led_lighting_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "plantas/layout-v2.md",
+      "confidence_score": 1.0,
+      "source": "plantas_layout_v2",
+      "target": "docs_brief_escopo_eletrico_led"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "entregaveis/README.md",
+      "confidence_score": 1.0,
+      "source": "entregaveis_readme",
+      "target": "entregaveis_quarto_giulia_lista_compras_v2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "entregaveis/README.md",
+      "confidence_score": 1.0,
+      "source": "entregaveis_readme",
+      "target": "entregaveis_quarto_giulia_v2_html"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "assets/fotos/ambiente/PO-01-armario-porta.png",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "assets_fotos_ambiente_po_01_armario_porta_png",
-      "target": "docs_quarto_json"
+      "confidence": "EXTRACTED",
+      "source_file": "entregaveis/quarto-giulia-lista-compras-v2.md",
+      "confidence_score": 1.0,
+      "source": "entregaveis_quarto_giulia_lista_compras_v2",
+      "target": "quarto_giulia_v2_concept"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "assets/fotos/ambiente/PS-01-porta-PO-aberta.png",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "assets_fotos_ambiente_ps_01_porta_po_aberta_png",
-      "target": "docs_quarto_json"
+      "confidence": "EXTRACTED",
+      "source_file": "entregaveis/quarto-giulia-v2.html",
+      "confidence_score": 1.0,
+      "source": "entregaveis_quarto_giulia_v2_html",
+      "target": "quarto_giulia_v2_concept"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "plantas/README.md",
+      "confidence_score": 1.0,
+      "source": "plantas_readme",
+      "target": "plantas_layout_v2"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "assets/fotos/moveis-presenteados/berco-referencia.jpg",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "assets_fotos_moveis_presenteados_berco_referencia_jpg",
-      "target": "docs_berco_json"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "assets/fotos/moveis-presenteados/comoda-referencia.jpg",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "assets_fotos_moveis_presenteados_comoda_referencia_jpg",
-      "target": "docs_comoda_json"
+      "confidence": "EXTRACTED",
+      "source_file": "plantas/layout-v2.md",
+      "confidence_score": 1.0,
+      "source": "plantas_layout_v2",
+      "target": "quarto_giulia_v2_dimensions"
     }
   ],
   "hyperedges": [
+    {
+      "id": "quarto_giulia_v2_brief_set",
+      "label": "Quarto Giulia v2 Brief Set",
+      "nodes": [
+        "docs_brief_2026_07_07_quarto_giulia_v2",
+        "docs_brief_sistema_paredes",
+        "docs_brief_escopo_eletrico_led",
+        "docs_brief_mobiliario_presenteado",
+        "docs_brief_paleta_soft_feminine"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md"
+    },
+    {
+      "id": "quarto_giulia_v2_design_system",
+      "label": "Quarto Giulia v2 Design System",
+      "nodes": [
+        "quarto_giulia_v2_concept",
+        "quarto_giulia_v2_dimensions",
+        "quarto_giulia_v2_led_lighting_system"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md"
+    },
+    {
+      "id": "quarto_giulia_v2_deliverables",
+      "label": "Quarto Giulia v2 Deliverables",
+      "nodes": [
+        "entregaveis_quarto_giulia_lista_compras_v2",
+        "entregaveis_quarto_giulia_v2_html",
+        "plantas_layout_v2"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "source_file": "entregaveis/README.md"
+    },
+    {
+      "id": "quarto_giulia_v2_electrical_system",
+      "label": "Quarto Giulia v2 Electrical System",
+      "nodes": [
+        "docs_brief_escopo_eletrico_led",
+        "quarto_giulia_v2_led_lighting_system",
+        "plantas_layout_v2"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/brief/escopo-eletrico-led.md"
+    },
     {
       "id": "budget_couture_delivery_package",
       "label": "Budget Couture Delivery Package",
@@ -1567,48 +1900,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/plans/2026-05-17-budget-couture-pdf.md"
-    },
-    {
-      "id": "quarto_giulia_v2_brief_set",
-      "label": "Quarto Giulia v2 Brief Set",
-      "nodes": [
-        "docs_brief_2026_07_07_quarto_giulia_v2",
-        "docs_brief_sistema_paredes",
-        "docs_brief_escopo_eletrico_led",
-        "docs_brief_mobiliario_presenteado",
-        "docs_brief_paleta_soft_feminine"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/brief/2026-07-07-quarto-giulia-v2.md"
-    },
-    {
-      "id": "quarto_giulia_v2_json_data",
-      "label": "Quarto Giulia v2 JSON Data Files",
-      "nodes": [
-        "docs_quarto_json",
-        "docs_berco_json",
-        "docs_comoda_json"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md"
-    },
-    {
-      "id": "layout_documentation_set",
-      "label": "Layout Documentation Set",
-      "nodes": [
-        "plantas_planta_baixa_quarto_bb",
-        "plantas_layout_v1",
-        "docs_quarto_json"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "plantas/README.md"
     }
   ],
-  "built_at_commit": "2ce5c181cb1535019912dc411d2a021d9b8d9582"
+  "built_at_commit": "3870e1e1d0b1601fc76c156850bfa05a0db7ad70"
 }

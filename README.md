@@ -7,9 +7,12 @@ Design de interiores para **quarto de bebê feminino** (conceito *Soft Feminine 
 | Campo | Valor |
 |-------|-------|
 | Ambiente | 2,54 × 2,54 m (6,45 m²), apto 3 quartos, sem suíte |
-| Móveis | Berço e cômoda **brancos presenteados** (sem azul) |
+| Móveis | Berço e cômoda **brancos presenteados** |
 | Paredes | Pintura + boiserie EVA + papel + rodapé LED |
 | Brief | [`docs/brief/2026-07-07-quarto-giulia-v2.md`](docs/brief/2026-07-07-quarto-giulia-v2.md) |
+| Layout | [`plantas/layout-v2.md`](plantas/layout-v2.md) |
+| Lista | [`entregaveis/quarto-giulia-lista-compras-v2.md`](entregaveis/quarto-giulia-lista-compras-v2.md) |
+| Dossiê | [`entregaveis/quarto-giulia-v2.html`](entregaveis/quarto-giulia-v2.html) · [PDF](entregaveis/quarto-giulia-v2.pdf) |
 
 ## Estrutura
 

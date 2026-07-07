@@ -38,6 +38,7 @@
     "assets/fotos/ambiente/PO-01-armario-porta.png",
     "assets/fotos/ambiente/PS-01-porta-PO-aberta.png"
   ],
+  "layout_ref": "plantas/layout-v2.md",
   "pendencias": [
     "pe_direito_real",
     "foto_interruptor_in_loco",

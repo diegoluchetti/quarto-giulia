@@ -15,9 +15,9 @@
     "semantic_hash": "d1602d73c0db6248faf3442eabe9cb0c"
   },
   "docs/quarto.json": {
-    "mtime": 1783441499.90886,
-    "ast_hash": "1e6d34f0540249c5e9737925b541ddf3",
-    "semantic_hash": "1e6d34f0540249c5e9737925b541ddf3"
+    "mtime": 1783442023.4409454,
+    "ast_hash": "190526034b675b4970340a34d859ccb7",
+    "semantic_hash": "190526034b675b4970340a34d859ccb7"
   },
   "docs/plans/2026-05-17-budget-couture-pdf.md": {
     "mtime": 1783437149.3297567,
@@ -43,5 +43,120 @@
     "mtime": 1779065352.6471446,
     "ast_hash": "5eeb0f8bf3b65150345f0cc37e8ea5e2",
     "semantic_hash": "5eeb0f8bf3b65150345f0cc37e8ea5e2"
+  },
+  "scripts/build_quarto_giulia_v2.py": {
+    "mtime": 1783441980.5479984,
+    "ast_hash": "f5cdcca2ffc2c48387b67baa1239879b",
+    "semantic_hash": "f5cdcca2ffc2c48387b67baa1239879b"
+  },
+  "assets/README.md": {
+    "mtime": 1783441630.1913235,
+    "ast_hash": "be3c4590e555365daa3283c7b9a254ea",
+    "semantic_hash": "be3c4590e555365daa3283c7b9a254ea"
+  },
+  "docs/README.md": {
+    "mtime": 1783441628.3707206,
+    "ast_hash": "7ff6cd94472f77d160c598f971ed5a8b",
+    "semantic_hash": "7ff6cd94472f77d160c598f971ed5a8b"
+  },
+  "docs/brief/2026-07-07-quarto-giulia-v2.md": {
+    "mtime": 1783441590.5250075,
+    "ast_hash": "085fc47a109f33d771d0206bea49aa38",
+    "semantic_hash": "085fc47a109f33d771d0206bea49aa38"
+  },
+  "docs/brief/mobiliario-presenteado.md": {
+    "mtime": 1783441564.8768408,
+    "ast_hash": "a02a3ca450faa3b0d43397615aa38275",
+    "semantic_hash": "a02a3ca450faa3b0d43397615aa38275"
+  },
+  "docs/brief/paleta-soft-feminine.md": {
+    "mtime": 1783441569.5696206,
+    "ast_hash": "015478425db25a7d17367ef4501b39bd",
+    "semantic_hash": "015478425db25a7d17367ef4501b39bd"
+  },
+  "docs/brief/sistema-paredes.md": {
+    "mtime": 1783441521.0158286,
+    "ast_hash": "07dcdf21df9dcd3c9c282537534c94b1",
+    "semantic_hash": "07dcdf21df9dcd3c9c282537534c94b1"
+  },
+  "docs/plans/2026-07-07-quarto-giulia-v2.md": {
+    "mtime": 1783441598.4468904,
+    "ast_hash": "c2fad3545cfb37211fce38b99b13c40f",
+    "semantic_hash": "c2fad3545cfb37211fce38b99b13c40f"
+  },
+  "entregaveis/archive/v1-budget-couture/README.md": {
+    "mtime": 1783441592.3467786,
+    "ast_hash": "2a4df3b98c3e34f44a886bf982fb0eca",
+    "semantic_hash": "2a4df3b98c3e34f44a886bf982fb0eca"
+  },
+  "entregaveis/archive/v1-budget-couture/quarto-bb-budget-couture.html": {
+    "mtime": 1779066470.74,
+    "ast_hash": "6efdb327629ee5916cb6fd4b21eb6ff0",
+    "semantic_hash": "6efdb327629ee5916cb6fd4b21eb6ff0"
+  },
+  "entregaveis/archive/v1-budget-couture/quarto-bb-lista-compras-budget-couture.md": {
+    "mtime": 1779066470.735474,
+    "ast_hash": "cecfca06002987a2859d669eec33eb54",
+    "semantic_hash": "cecfca06002987a2859d669eec33eb54"
+  },
+  "plantas/layout-v1.md": {
+    "mtime": 1783441633.4203968,
+    "ast_hash": "c82da35031998dd9060c776c4e824cda",
+    "semantic_hash": "c82da35031998dd9060c776c4e824cda"
+  },
+  "plantas/planta-baixa-quarto-bb.md": {
+    "mtime": 1783441633.7323544,
+    "ast_hash": "007e057056de9f9e37f86450364c0235",
+    "semantic_hash": "007e057056de9f9e37f86450364c0235"
+  },
+  "docs/referencias/eletrica-apto-patio-clube.pdf": {
+    "mtime": 1783441083.5588303,
+    "ast_hash": "62b8842487b4abcad458c26c7ae490c8",
+    "semantic_hash": "62b8842487b4abcad458c26c7ae490c8"
+  },
+  "assets/fotos/ambiente/PL-01-parede-leste.png": {
+    "mtime": 1779063931.8952584,
+    "ast_hash": "8d06da1adb6606f4f4c6078495b0e5aa",
+    "semantic_hash": "8d06da1adb6606f4f4c6078495b0e5aa"
+  },
+  "assets/fotos/ambiente/PN-01-janela-armario.png": {
+    "mtime": 1779063992.2816095,
+    "ast_hash": "9baa806d769fbd4171fdda67c3bb3e9a",
+    "semantic_hash": "9baa806d769fbd4171fdda67c3bb3e9a"
+  },
+  "assets/fotos/ambiente/PO-01-armario-porta.png": {
+    "mtime": 1779063795.963725,
+    "ast_hash": "72160244a3ebfe55e191e76b352ea8de",
+    "semantic_hash": "72160244a3ebfe55e191e76b352ea8de"
+  },
+  "assets/fotos/ambiente/PS-01-porta-PO-aberta.png": {
+    "mtime": 1779063858.9540367,
+    "ast_hash": "4ec701eabf5f4a7bed989b283eeb46a4",
+    "semantic_hash": "4ec701eabf5f4a7bed989b283eeb46a4"
+  },
+  "assets/fotos/moveis-presenteados/berco-referencia.jpg": {
+    "mtime": 1783440598.3635168,
+    "ast_hash": "20484e4bb405bd872d6ee7e40cd48c29",
+    "semantic_hash": "20484e4bb405bd872d6ee7e40cd48c29"
+  },
+  "assets/fotos/moveis-presenteados/comoda-referencia.jpg": {
+    "mtime": 1783440598.7702425,
+    "ast_hash": "122bdcd9462aab19557eb8a463f2662a",
+    "semantic_hash": "122bdcd9462aab19557eb8a463f2662a"
+  },
+  "assets/renders/layout-quarto-bb-calma-savana-3d.png": {
+    "mtime": 1779064821.0168326,
+    "ast_hash": "bfd76999c75fddc3fd8a66ab7ee88f78",
+    "semantic_hash": "bfd76999c75fddc3fd8a66ab7ee88f78"
+  },
+  "assets/renders/layout-quarto-bb-planta-3d-topo.png": {
+    "mtime": 1779064911.571352,
+    "ast_hash": "201ad430f80147e8c639bf07eccbd3ca",
+    "semantic_hash": "201ad430f80147e8c639bf07eccbd3ca"
+  },
+  "docs/referencias/eletrica-apto-patio-clube.png": {
+    "mtime": 1783441152.207069,
+    "ast_hash": "18e2383b6aaedd1a05fcb8867bd81ff3",
+    "semantic_hash": "18e2383b6aaedd1a05fcb8867bd81ff3"
   }
 }
